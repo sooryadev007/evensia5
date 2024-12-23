@@ -101,7 +101,7 @@ export default function Navbar() {
               className="w-full bg-[#7D1806] hover:bg-[#7D1806]/90 text-[#FFFCF3] mt-4"
               onClick={() => window.open("https://forms.google.com/evensia5", "_blank")}
             >
-              Apply Now
+              Register Now
             </Button>
           </div>
         </motion.div>
