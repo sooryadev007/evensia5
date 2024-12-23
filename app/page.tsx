@@ -9,6 +9,7 @@ import { Card } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 import ContactCard from "@/components/ContactCard";
 import Footer from "@/components/Footer";
+import CountdownTimer from "@/components/CountdownTimer";
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
@@ -72,6 +73,17 @@ export default function Home() {
           >
             Where Technology Meets Innovation
           </motion.p>
+          
+          {/* Countdown Timer */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.7 }}
+            className="mb-8 px-4"
+          >
+            <CountdownTimer />
+          </motion.div>
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -152,6 +164,108 @@ export default function Home() {
               </div>
             </Card>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Workshops and Speakers Section */}
+      <section className="py-12 sm:py-20 px-4 bg-[#1F1D17]">
+        <div className="max-w-6xl mx-auto">
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-3xl sm:text-4xl font-bold text-[#F3E1B3] mb-8 sm:mb-12 text-center"
+          >
+            Workshops & Speakers
+          </motion.h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+            {/* Workshops Card */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
+              <Card className="p-6 bg-[#1F1D17] border-[#F3E1B3]/20 shadow-lg overflow-hidden">
+                <div className="relative h-48 -mx-6 -mt-6 mb-6">
+                  <Image
+                    src="/workshop.jpg"
+                    alt="Workshop"
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black/50" />
+                  <h3 className="absolute bottom-4 left-6 text-2xl font-bold text-[#F3E1B3]">
+                    Technical Workshops
+                  </h3>
+                </div>
+                <div className="space-y-4">
+                  <p className="text-[#F3E1B3] leading-relaxed">
+                    Immerse yourself in hands-on learning experiences with our technical workshops. 
+                    Gain practical skills and insights from industry experts in:
+                  </p>
+                  <ul className="space-y-2 text-[#F3E1B3]">
+                    <li className="flex items-center gap-2">
+                      <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
+                      <span>Web Development & Cloud Computing</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
+                      <span>Artificial Intelligence & Machine Learning</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
+                      <span>IoT & Embedded Systems</span>
+                    </li>
+                  </ul>
+                </div>
+              </Card>
+            </motion.div>
+
+            {/* Speakers Card */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              <Card className="p-6 bg-[#1F1D17] border-[#F3E1B3]/20 shadow-lg overflow-hidden">
+                <div className="relative h-48 -mx-6 -mt-6 mb-6">
+                  <Image
+                    src="/speakers.jpg"
+                    alt="Speakers"
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black/50" />
+                  <h3 className="absolute bottom-4 left-6 text-2xl font-bold text-[#F3E1B3]">
+                    Expert Speakers
+                  </h3>
+                </div>
+                <div className="space-y-4">
+                  <p className="text-[#F3E1B3] leading-relaxed">
+                    Learn from distinguished speakers and industry leaders who will share their expertise and insights. 
+                    Our speakers bring years of experience in:
+                  </p>
+                  <ul className="space-y-2 text-[#F3E1B3]">
+                    <li className="flex items-center gap-2">
+                      <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
+                      <span>Technology Innovation & Future Trends</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
+                      <span>Career Development in Tech</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
+                      <span>Industry Best Practices</span>
+                    </li>
+                  </ul>
+                </div>
+              </Card>
+            </motion.div>
+          </div>
         </div>
       </section>
 
