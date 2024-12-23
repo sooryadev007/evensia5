@@ -29,14 +29,14 @@ export default function Home() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="relative min-h-screen flex items-center justify-center text-center px-4 py-20 sm:py-32 overflow-hidden"
+        className="relative min-h-screen flex items-center justify-center text-center px-4 py-20 sm:py-32 overflow-hidden bg-[#1F1D17]"
       >
         <div className="absolute inset-0">
           <Image
             src="/China.png"
             alt="Background"
             fill
-            className="object-cover"
+            className="object-cover opacity-80"
             priority
           />
         </div>
@@ -68,7 +68,7 @@ export default function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6 }}
-            className="text-lg sm:text-xl md:text-2xl text-[#F3E1B3] mb-8 px-4"
+            className="text-lg sm:text-xl md:text-2xl text-[#F3E1B3] mb-8 px-4 font-light"
           >
             Where Technology Meets Innovation
           </motion.p>
@@ -79,10 +79,10 @@ export default function Home() {
           >
             <Button 
               size="lg"
-              className="mt-4 sm:mt-8 bg-[#7D1806] hover:bg-[#7D1806]/90 text-[#FFFCF3] text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 rounded-lg shadow-lg transform transition hover:scale-105"
+              className="mt-4 sm:mt-8 bg-[#7D1806] hover:bg-[#7D1806]/90 text-[#F3E1B3] text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 rounded-lg shadow-lg transform transition hover:scale-105"
               onClick={() => window.open("https://forms.google.com/evensia5", "_blank")}
             >
-              Apply Now
+              Register Now
             </Button>
           </motion.div>
         </div>
@@ -91,14 +91,14 @@ export default function Home() {
       {/* About Section */}
       <section 
         id="about" 
-        className="py-12 sm:py-20 px-4 bg-[#FFFCF3]"
+        className="py-12 sm:py-20 px-4 bg-[#1F1D17]"
       >
         <div className="max-w-6xl mx-auto">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl sm:text-4xl font-bold text-[#7D1806] mb-8 sm:mb-12 text-center"
+            className="text-3xl sm:text-4xl font-bold text-[#F3E1B3] mb-8 sm:mb-12 text-center"
           >
             About Evensia
           </motion.h2>
@@ -108,44 +108,44 @@ export default function Home() {
             viewport={{ once: true }}
             className="grid grid-cols-1 gap-6 sm:gap-8"
           >
-            <Card className="p-4 sm:p-6 shadow-lg bg-[#FFFCF3]">
-              <h3 className="text-xl sm:text-2xl font-semibold text-[#7D1806] mb-3 sm:mb-4">A Legacy of Excellence</h3>
-              <div className="space-y-4 text-sm sm:text-base text-[#130504] leading-relaxed">
-                <p>
+            <Card className="p-4 sm:p-6 shadow-lg bg-[#1F1D17] border-[#F3E1B3]/20">
+              <h3 className="text-xl sm:text-2xl font-semibold text-[#F3E1B3] mb-3 sm:mb-4">A Legacy of Excellence</h3>
+              <div className="space-y-4 text-[#F3E1B3]">
+                <p className="text-sm sm:text-base leading-relaxed">
                   Evensia is an intercollegiate event that was the inauguration of IEEE CS Chapter of CE Munnar in 2016. The second, third and fourth editions of Evensia were two-day technical symposiums held in November 2017, October 2019 and January 2022 respectively.
                 </p>
-                <p>
+                <p className="text-sm sm:text-base leading-relaxed">
                   The four previous editions saw a great participation from students across the state. Evensia is a combination of technology culture and humanity, each edition of Evensia has promised this to all the participants. This event has always been a part of the sweetest memories in the mind of all participants.
                 </p>
               </div>
             </Card>
 
-            <Card className="p-4 sm:p-6 shadow-lg bg-[#FFFCF3]">
-              <h3 className="text-xl sm:text-2xl font-semibold text-[#7D1806] mb-3 sm:mb-4">Event Highlights</h3>
+            <Card className="p-4 sm:p-6 shadow-lg bg-[#1F1D17] border-[#F3E1B3]/20">
+              <h3 className="text-xl sm:text-2xl font-semibold text-[#F3E1B3] mb-3 sm:mb-4">Event Highlights</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-3 sm:space-y-4">
                   <div className="flex items-center gap-2 sm:gap-3">
-                    <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-[#7D1806]" />
-                    <span className="text-sm sm:text-base text-[#130504]">January 24th, 2024</span>
+                    <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-[#F3E1B3]" />
+                    <span className="text-sm sm:text-base text-[#F3E1B3]">January 24th, 2024</span>
                   </div>
                   <div className="flex items-center gap-2 sm:gap-3">
-                    <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-[#7D1806]" />
-                    <span className="text-sm sm:text-base text-[#130504]">Full Day Event</span>
+                    <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-[#F3E1B3]" />
+                    <span className="text-sm sm:text-base text-[#F3E1B3]">Full Day Event</span>
                   </div>
                   <div className="flex items-center gap-2 sm:gap-3">
-                    <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-[#7D1806]" />
-                    <span className="text-sm sm:text-base text-[#130504]">CE Munnar Campus</span>
+                    <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-[#F3E1B3]" />
+                    <span className="text-sm sm:text-base text-[#F3E1B3]">CE Munnar Campus</span>
                   </div>
                   <div className="flex items-center gap-2 sm:gap-3">
-                    <Users className="w-4 h-4 sm:w-5 sm:h-5 text-[#7D1806]" />
-                    <span className="text-sm sm:text-base text-[#130504]">Open to All Engineering Students</span>
+                    <Users className="w-4 h-4 sm:w-5 sm:h-5 text-[#F3E1B3]" />
+                    <span className="text-sm sm:text-base text-[#F3E1B3]">Open to All Engineering Students</span>
                   </div>
                 </div>
-                <div className="space-y-3 sm:space-y-4 text-sm sm:text-base text-[#130504]">
-                  <p>
+                <div className="space-y-3 sm:space-y-4 text-[#F3E1B3]">
+                  <p className="text-sm sm:text-base leading-relaxed">
                     EVENSIA 5 continues the legacy of excellence while bringing fresh innovations and opportunities for participants. Join us for a day filled with technical workshops, competitions, and networking opportunities.
                   </p>
-                  <p>
+                  <p className="text-sm sm:text-base leading-relaxed">
                     Experience the perfect blend of technology, culture, and humanity that has made Evensia a memorable event for participants throughout its history.
                   </p>
                 </div>
@@ -196,14 +196,14 @@ export default function Home() {
       {/* Contact Section */}
       <section 
         id="contact"
-        className="py-12 sm:py-20 px-4 bg-[#FFFCF3]"
+        className="py-12 sm:py-20 px-4 bg-[#1F1D17]"
       >
         <div className="max-w-6xl mx-auto">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl sm:text-4xl font-bold text-[#7D1806] mb-8 sm:mb-12 text-center"
+            className="text-3xl sm:text-4xl font-bold text-[#F3E1B3] mb-8 sm:mb-12 text-center"
           >
             Contact Us
           </motion.h2>

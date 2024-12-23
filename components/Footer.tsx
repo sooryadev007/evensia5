@@ -12,7 +12,7 @@ export default function Footer() {
             </p>
           </div>
           <div>
-            <h3 className="text-xl font-semibold mb-4">Event Details</h3>
+            <h3 className="text-xl font-semibold mb-4">Evensia 5</h3>
             <p className="text-sm leading-relaxed opacity-80">
               Evensia 5 continues the legacy of innovation and impact, bringing together technology, culture, and humanity. Join us for this celebrated technical symposium that promises learning, innovation, and collaboration.
             </p>
