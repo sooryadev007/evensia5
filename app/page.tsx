@@ -2,10 +2,18 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Calendar, Clock, MapPin, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import Navbar from "@/components/Navbar";
 import ContactCard from "@/components/ContactCard";
 import Footer from "@/components/Footer";
@@ -32,10 +40,21 @@ export default function Home() {
         transition={{ duration: 0.8 }}
         className="relative min-h-screen flex items-center justify-center text-center px-4 py-20 sm:py-32 overflow-hidden bg-[#1F1D17]"
       >
-        <div className="absolute inset-0">
+        {/* Mobile Background (Japan.png) */}
+        <div className="absolute inset-0 block md:hidden">
+          <Image
+            src="/japan.png"
+            alt="Mobile Background"
+            fill
+            className="object-cover opacity-40"
+            priority
+          />
+        </div>
+        {/* Desktop Background (China.png) */}
+        <div className="absolute inset-0 hidden md:block">
           <Image
             src="/China.png"
-            alt="Background"
+            alt="Desktop Background"
             fill
             className="object-cover opacity-80"
             priority
@@ -89,13 +108,47 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.9 }}
           >
-            <Button 
-              size="lg"
-              className="mt-4 sm:mt-8 bg-[#7D1806] hover:bg-[#7D1806]/90 text-[#F3E1B3] text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 rounded-lg shadow-lg transform transition hover:scale-105"
-              onClick={() => window.open("https://forms.google.com/evensia5", "_blank")}
-            >
-              Register Now
-            </Button>
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button 
+                  size="lg"
+                  className="mt-4 sm:mt-8 bg-[#7D1806] hover:bg-[#7D1806]/90 text-[#F3E1B3] text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-3 sm:py-4 md:py-6 rounded-lg shadow-lg transform transition hover:scale-105 w-full sm:w-auto min-w-[200px]"
+                >
+                  Register Now
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="bg-[#1F1D17] border-[#F3E1B3]/20 w-[95%] sm:w-[90%] sm:max-w-md mx-auto p-4 sm:p-6">
+                <DialogHeader className="space-y-2 sm:space-y-3">
+                  <DialogTitle className="text-xl sm:text-2xl font-bold text-[#F3E1B3] text-center">
+                    Choose Registration Type
+                  </DialogTitle>
+                  <DialogDescription className="text-[#F3E1B3]/80 text-sm sm:text-base text-center">
+                    Select your preferred registration option below
+                  </DialogDescription>
+                </DialogHeader>
+                <motion.div 
+                  className="flex flex-col gap-3 sm:gap-4 mt-4 sm:mt-6"
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.2 }}
+                >
+                  <Button
+                    size="lg"
+                    className="bg-[#7D1806] hover:bg-[#7D1806]/90 text-[#F3E1B3] text-sm sm:text-base py-4 sm:py-6 h-auto"
+                    onClick={() => window.open("https://forms.google.com/evensia5-individual", "_blank")}
+                  >
+                    Individual Registration
+                  </Button>
+                  <Button
+                    size="lg"
+                    className="bg-[#7D1806] hover:bg-[#7D1806]/90 text-[#F3E1B3] text-sm sm:text-base py-4 sm:py-6 h-auto"
+                    onClick={() => window.open("https://forms.google.com/evensia5-couple", "_blank")}
+                  >
+                    Couple Registration
+                  </Button>
+                </motion.div>
+              </DialogContent>
+            </Dialog>
           </motion.div>
         </div>
       </motion.section>
@@ -168,7 +221,10 @@ export default function Home() {
       </section>
 
       {/* Workshops and Speakers Section */}
-      <section className="py-12 sm:py-20 px-4 bg-[#1F1D17]">
+      <section 
+        id="workshops"
+        className="py-12 sm:py-20 px-4 bg-[#1F1D17]"
+      >
         <div className="max-w-6xl mx-auto">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
@@ -180,7 +236,7 @@ export default function Home() {
           </motion.h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
-            {/* Workshops Card */}
+            {/* Web Development Workshop Card */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -189,41 +245,37 @@ export default function Home() {
             >
               <Card className="p-6 bg-[#1F1D17] border-[#F3E1B3]/20 shadow-lg overflow-hidden">
                 <div className="relative h-48 -mx-6 -mt-6 mb-6">
-                  <Image
-                    src="/workshop.jpg"
-                    alt="Workshop"
-                    fill
-                    className="object-cover"
-                  />
+                  <div className="absolute inset-0 bg-gray-800 flex items-center justify-center">
+                    <span className="text-[#F3E1B3]/50 text-sm">Image Coming Soon</span>
+                  </div>
                   <div className="absolute inset-0 bg-black/50" />
                   <h3 className="absolute bottom-4 left-6 text-2xl font-bold text-[#F3E1B3]">
-                    Technical Workshops
+                    Web Development Workshop
                   </h3>
                 </div>
                 <div className="space-y-4">
                   <p className="text-[#F3E1B3] leading-relaxed">
-                    Immerse yourself in hands-on learning experiences with our technical workshops. 
-                    Gain practical skills and insights from industry experts in:
+                    Master modern web development technologies and best practices through hands-on coding sessions.
                   </p>
                   <ul className="space-y-2 text-[#F3E1B3]">
                     <li className="flex items-center gap-2">
                       <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
-                      <span>Web Development & Cloud Computing</span>
+                      <span>Frontend Frameworks (React, Next.js)</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
-                      <span>Artificial Intelligence & Machine Learning</span>
+                      <span>Backend Development (Node.js)</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
-                      <span>IoT & Embedded Systems</span>
+                      <span>Database Design & API Development</span>
                     </li>
                   </ul>
                 </div>
               </Card>
             </motion.div>
 
-            {/* Speakers Card */}
+            {/* AI/ML Workshop Card */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -232,34 +284,108 @@ export default function Home() {
             >
               <Card className="p-6 bg-[#1F1D17] border-[#F3E1B3]/20 shadow-lg overflow-hidden">
                 <div className="relative h-48 -mx-6 -mt-6 mb-6">
-                  <Image
-                    src="/speakers.jpg"
-                    alt="Speakers"
-                    fill
-                    className="object-cover"
-                  />
+                  <div className="absolute inset-0 bg-gray-800 flex items-center justify-center">
+                    <span className="text-[#F3E1B3]/50 text-sm">Image Coming Soon</span>
+                  </div>
                   <div className="absolute inset-0 bg-black/50" />
                   <h3 className="absolute bottom-4 left-6 text-2xl font-bold text-[#F3E1B3]">
-                    Expert Speakers
+                    AI & ML Workshop
                   </h3>
                 </div>
                 <div className="space-y-4">
                   <p className="text-[#F3E1B3] leading-relaxed">
-                    Learn from distinguished speakers and industry leaders who will share their expertise and insights. 
-                    Our speakers bring years of experience in:
+                    Dive into the world of artificial intelligence and machine learning with practical implementations.
                   </p>
                   <ul className="space-y-2 text-[#F3E1B3]">
                     <li className="flex items-center gap-2">
                       <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
-                      <span>Technology Innovation & Future Trends</span>
+                      <span>Deep Learning Fundamentals</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
-                      <span>Career Development in Tech</span>
+                      <span>Computer Vision Applications</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
-                      <span>Industry Best Practices</span>
+                      <span>Natural Language Processing</span>
+                    </li>
+                  </ul>
+                </div>
+              </Card>
+            </motion.div>
+
+            {/* Industry Expert Speaker Card */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+            >
+              <Card className="p-6 bg-[#1F1D17] border-[#F3E1B3]/20 shadow-lg overflow-hidden">
+                <div className="relative h-48 -mx-6 -mt-6 mb-6">
+                  <div className="absolute inset-0 bg-gray-800 flex items-center justify-center">
+                    <span className="text-[#F3E1B3]/50 text-sm">Image Coming Soon</span>
+                  </div>
+                  <div className="absolute inset-0 bg-black/50" />
+                  <h3 className="absolute bottom-4 left-6 text-2xl font-bold text-[#F3E1B3]">
+                    Industry Leaders Panel
+                  </h3>
+                </div>
+                <div className="space-y-4">
+                  <p className="text-[#F3E1B3] leading-relaxed">
+                    Connect with industry veterans sharing insights on technology trends and career growth.
+                  </p>
+                  <ul className="space-y-2 text-[#F3E1B3]">
+                    <li className="flex items-center gap-2">
+                      <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
+                      <span>Tech Leadership Insights</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
+                      <span>Future of Technology</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
+                      <span>Innovation in Tech Industry</span>
+                    </li>
+                  </ul>
+                </div>
+              </Card>
+            </motion.div>
+
+            {/* Academic Speakers Card */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+            >
+              <Card className="p-6 bg-[#1F1D17] border-[#F3E1B3]/20 shadow-lg overflow-hidden">
+                <div className="relative h-48 -mx-6 -mt-6 mb-6">
+                  <div className="absolute inset-0 bg-gray-800 flex items-center justify-center">
+                    <span className="text-[#F3E1B3]/50 text-sm">Image Coming Soon</span>
+                  </div>
+                  <div className="absolute inset-0 bg-black/50" />
+                  <h3 className="absolute bottom-4 left-6 text-2xl font-bold text-[#F3E1B3]">
+                    Research & Innovation Talks
+                  </h3>
+                </div>
+                <div className="space-y-4">
+                  <p className="text-[#F3E1B3] leading-relaxed">
+                    Discover cutting-edge research and innovations from academic experts and researchers.
+                  </p>
+                  <ul className="space-y-2 text-[#F3E1B3]">
+                    <li className="flex items-center gap-2">
+                      <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
+                      <span>Emerging Technologies</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
+                      <span>Research Breakthroughs</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
+                      <span>Academic Perspectives</span>
                     </li>
                   </ul>
                 </div>

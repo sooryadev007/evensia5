@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 export default function Navbar() {
@@ -12,6 +11,7 @@ export default function Navbar() {
   const navItems = [
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
+    { name: "Workshops & Speakers", href: "#workshops" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -58,12 +58,6 @@ export default function Navbar() {
                   {item.name}
                 </button>
               ))}
-              <Button
-                className="bg-[#7D1806] hover:bg-[#7D1806]/90 text-[#FFFCF3]"
-                onClick={() => window.open("https://forms.google.com/evensia5", "_blank")}
-              >
-                Register Now
-              </Button>
             </div>
           </div>
 
@@ -97,12 +91,6 @@ export default function Navbar() {
                 {item.name}
               </button>
             ))}
-            <Button
-              className="w-full bg-[#7D1806] hover:bg-[#7D1806]/90 text-[#FFFCF3] mt-4"
-              onClick={() => window.open("https://forms.google.com/evensia5", "_blank")}
-            >
-              Register Now
-            </Button>
           </div>
         </motion.div>
       )}
