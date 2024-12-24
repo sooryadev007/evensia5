@@ -7,6 +7,9 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Evensia 5',
   description: 'The Legacy of Excellence',
+  icons: {
+    icon: '/e2.png',
+  },
 };
 
 export default function RootLayout({
@@ -16,6 +19,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link 
+          rel="icon" 
+          type="image/png" 
+          href="/e2.png"
+          sizes="32x32"
+        />
+        <link 
+          rel="icon" 
+          type="image/png" 
+          href="/e2.png"
+          sizes="16x16"
+        />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );

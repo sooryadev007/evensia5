@@ -43,10 +43,10 @@ export default function Home() {
         {/* Mobile Background (Japan.png) */}
         <div className="absolute inset-0 block md:hidden">
           <Image
-            src="/japan.png"
+            src="/japan.svg"
             alt="Mobile Background"
             fill
-            className="object-cover opacity-40"
+            className="object-cover opacity-50"
             priority
           />
         </div>
