@@ -40,13 +40,13 @@ export default function Home() {
         transition={{ duration: 0.8 }}
         className="relative min-h-screen flex items-center justify-center text-center px-4 py-20 sm:py-32 overflow-hidden bg-[#1F1D17]"
       >
-        {/* Mobile Background (Japan.png) */}
+        {/* Mobile Background (Japan SVG) */}
         <div className="absolute inset-0 block md:hidden">
           <Image
-            src="/japan.png"
+            src="/japan.svg"
             alt="Mobile Background"
             fill
-            className="object-cover opacity-50"
+            className="object-cover opacity-10"
             priority
           />
         </div>
