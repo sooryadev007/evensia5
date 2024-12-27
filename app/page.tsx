@@ -21,6 +21,7 @@ import CountdownTimer from "@/components/CountdownTimer";
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
+  const [guidelinesAccepted, setGuidelinesAccepted] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -142,7 +143,7 @@ export default function Home() {
                           <li>Couple registration will only be valid for 1 male and 1 female</li>
                           <li>For every registration as a pair each ticket cost will be deducted by Rs.100/-</li>
                           <li>Couple registration can be of any combination regardless of IEEE/Non-IEEE/other entry</li>
-                          <li>Event schedule will be provided underneath</li>
+                          <li>Delegates can find their own accommodation or can be provided by the event committee.</li>
                         </ul>
                       </div>
 
@@ -159,6 +160,18 @@ export default function Home() {
                   </DialogDescription>
                 </div>
                 <div className="p-4 sm:p-6 border-t border-[#F3E1B3]/20">
+                  <div className="flex items-center gap-2 mb-4">
+                    <input
+                      type="checkbox"
+                      id="guidelines-checkbox"
+                      checked={guidelinesAccepted}
+                      onChange={(e) => setGuidelinesAccepted(e.target.checked)}
+                      className="w-4 h-4 rounded border-[#F3E1B3]/50 bg-transparent checked:bg-[#7D1806] checked:border-transparent focus:ring-[#7D1806] focus:ring-offset-0"
+                    />
+                    <label htmlFor="guidelines-checkbox" className="text-[#F3E1B3]/80 text-sm sm:text-base">
+                      I have read the guidelines and would abide by it
+                    </label>
+                  </div>
                   <motion.div 
                     className="flex flex-col gap-3 sm:gap-4"
                     initial={{ opacity: 0, y: 10 }}
@@ -167,15 +180,17 @@ export default function Home() {
                   >
                     <Button
                       size="lg"
-                      className="bg-[#7D1806] hover:bg-[#7D1806]/90 text-[#F3E1B3] text-sm sm:text-base py-4 sm:py-6 h-auto"
+                      className="bg-[#7D1806] hover:bg-[#7D1806]/90 text-[#F3E1B3] text-sm sm:text-base py-4 sm:py-6 h-auto disabled:opacity-50 disabled:cursor-not-allowed"
                       onClick={() => window.open("https://evensia.neetoform.com/91820973ab4066bb4356", "_blank")}
+                      disabled={!guidelinesAccepted}
                     >
                       Individual Registration
                     </Button>
                     <Button
                       size="lg"
-                      className="bg-[#7D1806] hover:bg-[#7D1806]/90 text-[#F3E1B3] text-sm sm:text-base py-4 sm:py-6 h-auto"
+                      className="bg-[#7D1806] hover:bg-[#7D1806]/90 text-[#F3E1B3] text-sm sm:text-base py-4 sm:py-6 h-auto disabled:opacity-50 disabled:cursor-not-allowed"
                       onClick={() => window.open("https://evensia.neetoform.com/00621e89f062a17ab33e", "_blank")}
+                      disabled={!guidelinesAccepted}
                     >
                       Couple Registration
                     </Button>
