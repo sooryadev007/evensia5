@@ -80,3 +80,43 @@
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-90vw * 13 - 0.25rem * 12));
+  }
+}
+
+.animate-scroll {
+  animation: scroll 45s linear infinite;
+  width: fit-content;
+}
+
+.hover\:pause-animation:hover {
+  animation-play-state: paused;
+}
+
+@media (min-width: 640px) {
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-400px * 13 - 0.5rem * 12));
+    }
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

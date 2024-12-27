@@ -90,7 +90,7 @@ export default function Home() {
             transition={{ delay: 0.6 }}
             className="text-lg sm:text-xl md:text-2xl text-[#F3E1B3] mb-8 px-4 font-light"
           >
-            Where Technology Meets Innovation
+            Where Technology Meets Romance
           </motion.p>
           
           {/* Countdown Timer */}
@@ -426,6 +426,87 @@ export default function Home() {
               </Card>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* Glimpses Section */}
+      <section 
+        id="glimpses"
+        className="py-12 sm:py-20 px-4 bg-[#1F1D17] overflow-hidden"
+      >
+        <div className="max-w-6xl mx-auto">
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-3xl sm:text-4xl font-bold text-[#F3E1B3] mb-8 sm:mb-12 text-center"
+          >
+            Glimpses of Evensia
+          </motion.h2>
+          
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="relative"
+          >
+            <div 
+              className="flex gap-1 sm:gap-2 animate-scroll overflow-x-auto touch-pan-x pb-4 cursor-grab active:cursor-grabbing snap-x snap-mandatory no-scrollbar -mx-4 sm:mx-0 px-4 sm:px-0"
+              style={{ 
+                scrollbarWidth: 'none',
+                msOverflowStyle: 'none',
+                WebkitOverflowScrolling: 'touch'
+              }}
+            >
+              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].map((index) => (
+                <motion.div
+                  key={index}
+                  className="relative flex-none w-[90vw] sm:w-[400px] h-[250px] sm:h-[300px] rounded-xl overflow-hidden snap-center"
+                  initial={{ x: 50, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  transition={{ 
+                    duration: 0.5,
+                    delay: index * 0.1,
+                    ease: "easeOut"
+                  }}
+                >
+                  <Image
+                    src={`/${index}.jpg`}
+                    alt={`Glimpse ${index}`}
+                    fill
+                    className="object-cover transition-transform duration-300 hover:scale-110 pointer-events-none"
+                    priority
+                    draggable="false"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
+                </motion.div>
+              ))}
+              {/* Duplicate images for infinite scroll effect */}
+              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].map((index) => (
+                <motion.div
+                  key={`duplicate-${index}`}
+                  className="relative flex-none w-[90vw] sm:w-[400px] h-[250px] sm:h-[300px] rounded-xl overflow-hidden snap-center"
+                  initial={{ x: 50, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  transition={{ 
+                    duration: 0.5,
+                    delay: (index + 13) * 0.1,
+                    ease: "easeOut"
+                  }}
+                >
+                  <Image
+                    src={`/${index}.jpg`}
+                    alt={`Glimpse ${index}`}
+                    fill
+                    className="object-cover transition-transform duration-300 hover:scale-110 pointer-events-none"
+                    priority
+                    draggable="false"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
         </div>
       </section>
 
