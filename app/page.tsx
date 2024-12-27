@@ -265,6 +265,115 @@ export default function Home() {
                 </div>
               </div>
             </Card>
+
+            <motion.h3 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-2xl sm:text-3xl font-bold text-[#F3E1B3] mb-6 sm:mb-8 text-center mt-12"
+            >
+              Activities
+            </motion.h3>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
+              {/* Trekking Card */}
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+              >
+                <Card className="p-6 bg-[#1F1D17] border-[#F3E1B3]/20 shadow-lg overflow-hidden group">
+                  <div className="relative h-48 -mx-6 -mt-6 mb-6 overflow-hidden">
+                    <Image
+                      src="/10.jpg"
+                      alt="Trekking"
+                      fill
+                      className="object-cover transition-transform duration-300 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent" />
+                    <h3 className="absolute top-4 left-6 text-2xl font-bold text-[#F3E1B3] transform group-hover:scale-105 transition-transform">
+                      Trekking
+                    </h3>
+                  </div>
+                  <p className="text-[#F3E1B3] leading-relaxed">
+                    Experience the breathtaking beauty of Munnar through guided treks, exploring its scenic landscapes and natural wonders.
+                  </p>
+                </Card>
+              </motion.div>
+
+              {/* Campfire Card */}
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+              >
+                <Card className="p-6 bg-[#1F1D17] border-[#F3E1B3]/20 shadow-lg overflow-hidden group">
+                  <div className="relative h-48 -mx-6 -mt-6 mb-6 overflow-hidden">
+                    <Image
+                      src="/2.jpg"
+                      alt="Campfire"
+                      fill
+                      className="object-cover transition-transform duration-300 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent" />
+                    <h3 className="absolute top-4 left-6 text-2xl font-bold text-[#F3E1B3] transform group-hover:scale-105 transition-transform">
+                      Campfire
+                    </h3>
+                  </div>
+                  <p className="text-[#F3E1B3] leading-relaxed">
+                    Gather around the warmth of a campfire, share stories, and create lasting memories under the starlit sky.
+                  </p>
+                </Card>
+              </motion.div>
+
+              {/* Sky Lantern Night Card */}
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+              >
+                <Card className="p-6 bg-[#1F1D17] border-[#F3E1B3]/20 shadow-lg overflow-hidden group">
+                  <div className="relative h-48 -mx-6 -mt-6 mb-6 overflow-hidden">
+                    <div className="absolute inset-0 bg-gray-800 flex items-center justify-center">
+                      <span className="text-[#F3E1B3]/50 text-sm">Image Coming Soon</span>
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent" />
+                    <h3 className="absolute top-4 left-6 text-2xl font-bold text-[#F3E1B3] transform group-hover:scale-105 transition-transform">
+                      Sky Lantern Night
+                    </h3>
+                  </div>
+                  <p className="text-[#F3E1B3] leading-relaxed">
+                    Light up the night sky with beautiful lanterns, making wishes and creating a magical atmosphere together.
+                  </p>
+                </Card>
+              </motion.div>
+
+              {/* Cultural Night Card */}
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+              >
+                <Card className="p-6 bg-[#1F1D17] border-[#F3E1B3]/20 shadow-lg overflow-hidden group">
+                  <div className="relative h-48 -mx-6 -mt-6 mb-6 overflow-hidden">
+                    <div className="absolute inset-0 bg-gray-800 flex items-center justify-center">
+                      <span className="text-[#F3E1B3]/50 text-sm">Image Coming Soon</span>
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent" />
+                    <h3 className="absolute top-4 left-6 text-2xl font-bold text-[#F3E1B3] transform group-hover:scale-105 transition-transform">
+                      Cultural Night
+                    </h3>
+                  </div>
+                  <p className="text-[#F3E1B3] leading-relaxed">
+                    Immerse yourself in a vibrant celebration of arts, music, and dance showcasing diverse cultural performances.
+                  </p>
+                </Card>
+              </motion.div>
+            </div>
           </motion.div>
         </div>
       </section>
