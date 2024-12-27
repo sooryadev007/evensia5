@@ -647,30 +647,46 @@ export default function Home() {
           >
             Location
           </motion.h2>
-          <div className="flex justify-center">
-            <div className="hidden md:block w-full max-w-4xl">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.118661185144!2d77.06764407562513!3d10.08936229002064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b079bd800513727%3A0x857b2268ee00e2cc!2sCollege%20of%20Engineering%20Munnar%20(CEM)!5e0!3m2!1sen!2sin!4v1734962343154!5m2!1sen!2sin" 
-                width="100%" 
-                height="600" 
-                style={{ border: 0 }} 
-                allowFullScreen 
-                loading="lazy" 
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            </div>
-            <div className="md:hidden w-full">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.118661185144!2d77.06764407562513!3d10.08936229002064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b079bd800513727%3A0x857b2268ee00e2cc!2sCollege%20of%20Engineering%20Munnar%20(CEM)!5e0!3m2!1sen!2sin!4v1734962343154!5m2!1sen!2sin" 
-                width="100%" 
-                height="400" 
-                style={{ border: 0 }} 
-                allowFullScreen 
-                loading="lazy" 
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            </div>
-          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <Card className="p-6 bg-[#1F1D17] border-[#F3E1B3]/20 shadow-lg overflow-hidden">
+              <div className="flex justify-center">
+                <div className="hidden md:block w-full">
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.118661185144!2d77.06764407562513!3d10.08936229002064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b079bd800513727%3A0x857b2268ee00e2cc!2sCollege%20of%20Engineering%20Munnar%20(CEM)!5e0!3m2!1sen!2sin!4v1734962343154!5m2!1sen!2sin" 
+                    width="100%" 
+                    height="600" 
+                    style={{ border: 0 }} 
+                    allowFullScreen 
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="rounded-lg"
+                  />
+                </div>
+                <div className="md:hidden w-full">
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.118661185144!2d77.06764407562513!3d10.08936229002064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b079bd800513727%3A0x857b2268ee00e2cc!2sCollege%20of%20Engineering%20Munnar%20(CEM)!5e0!3m2!1sen!2sin!4v1734962343154!5m2!1sen!2sin" 
+                    width="100%" 
+                    height="400" 
+                    style={{ border: 0 }} 
+                    allowFullScreen 
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="rounded-lg"
+                  />
+                </div>
+              </div>
+              <div className="mt-6 text-[#F3E1B3]">
+                <h3 className="text-xl font-semibold mb-2">College of Engineering Munnar</h3>
+                <p className="text-[#F3E1B3]/80">Near Govt. High School, Munnar P.O</p>
+                <p className="text-[#F3E1B3]/80">Idukki, Kerala - 685612</p>
+              </div>
+            </Card>
+          </motion.div>
         </div>
       </section>
 
