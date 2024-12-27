@@ -311,7 +311,7 @@ export default function Home() {
                 <Card className="p-6 bg-[#1F1D17] border-[#F3E1B3]/20 shadow-lg overflow-hidden group">
                   <div className="relative h-80 sm:h-96 -mx-6 -mt-6 mb-6 overflow-hidden">
                     <Image
-                      src="/2.jpg"
+                      src="/campfire.jpg"
                       alt="Campfire"
                       fill
                       className="object-cover transition-transform duration-300 group-hover:scale-110"
