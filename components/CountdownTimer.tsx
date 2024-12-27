@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import { Card, CardContent } from "@/components/ui/card"
 
-const targetDate = new Date('2025-01-24T00:00:00+05:30').getTime()
+const targetDate = new Date('2025-01-25T00:00:00+05:30').getTime()
 
 export default function CountdownTimer() {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft())

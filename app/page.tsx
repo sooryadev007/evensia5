@@ -117,36 +117,70 @@ export default function Home() {
                   Register Now
                 </Button>
               </DialogTrigger>
-              <DialogContent className="bg-[#1F1D17] border-[#F3E1B3]/20 w-[95%] sm:w-[90%] sm:max-w-md mx-auto p-4 sm:p-6">
-                <DialogHeader className="space-y-2 sm:space-y-3">
+              <DialogContent className="bg-[#1F1D17] border-[#F3E1B3]/20 w-[95%] sm:w-[90%] max-h-[90vh] sm:max-w-2xl mx-auto overflow-hidden flex flex-col">
+                <DialogHeader className="space-y-2 sm:space-y-3 p-4 sm:p-6">
                   <DialogTitle className="text-xl sm:text-2xl font-bold text-[#F3E1B3] text-center">
-                    Choose Registration Type
+                    Registration Guidelines
                   </DialogTitle>
-                  <DialogDescription className="text-[#F3E1B3]/80 text-sm sm:text-base text-center">
-                    Select your preferred registration option below
-                  </DialogDescription>
                 </DialogHeader>
-                <motion.div 
-                  className="flex flex-col gap-3 sm:gap-4 mt-4 sm:mt-6"
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.2 }}
-                >
-                  <Button
-                    size="lg"
-                    className="bg-[#7D1806] hover:bg-[#7D1806]/90 text-[#F3E1B3] text-sm sm:text-base py-4 sm:py-6 h-auto"
-                    onClick={() => window.open("https://forms.google.com/evensia5-individual", "_blank")}
+                <div className="overflow-y-auto flex-1 px-4 sm:px-6">
+                  <DialogDescription className="text-[#F3E1B3]/80 text-sm sm:text-base pb-4">
+                    <div className="space-y-4">
+                      <p className="font-semibold text-[#F3E1B3]">Guidelines for Registration:</p>
+                      <ul className="list-disc pl-4 space-y-2">
+                        <li>Click on the "register as" options below accordingly</li>
+                        <li>Fill the google forms correctly (Details will be used for certificates and recordation)</li>
+                        <li>Once filled, you will receive an instant acknowledgment through email</li>
+                        <li>Within 24 hours you will receive an email from our side providing you with the amount for the tickets with respect to your combinations and QR/UPI details for payment</li>
+                        <li>Do the payment and reply the mail with proof (screen shot) and transaction id as contents</li>
+                        <li>Once the verification process is completed your tickets will be confirmed</li>
+                      </ul>
+                      
+                      <div className="mt-6">
+                        <p className="font-semibold text-[#F3E1B3] mb-2">NB 1:</p>
+                        <ul className="list-disc pl-4 space-y-2">
+                          <li>Couple registration will only be valid for 1 male and 1 female</li>
+                          <li>For every registration as a pair each ticket cost will be deducted by Rs.100/-</li>
+                          <li>Couple registration can be of any combination regardless of IEEE/Non-IEEE/other entry</li>
+                          <li>Event schedule will be provided underneath</li>
+                        </ul>
+                      </div>
+
+                      <div className="mt-6">
+                        <p className="font-semibold text-[#F3E1B3] mb-2">NB 2: Delegates seeking accommodation facility</p>
+                        <ul className="list-disc pl-4 space-y-2">
+                          <li>Delegates seeking accommodation facility will be charged with Rs.200/- each (for 1 day only)</li>
+                          <li>Accommodation facility for gents and ladies will be provided separately</li>
+                          <li>Travel to and from event venue will be provided</li>
+                          <li>Any conflicts arising from delegates regarding the accommodative property will not be the responsibility of the organizing committee</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </DialogDescription>
+                </div>
+                <div className="p-4 sm:p-6 border-t border-[#F3E1B3]/20">
+                  <motion.div 
+                    className="flex flex-col gap-3 sm:gap-4"
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.2 }}
                   >
-                    Individual Registration
-                  </Button>
-                  <Button
-                    size="lg"
-                    className="bg-[#7D1806] hover:bg-[#7D1806]/90 text-[#F3E1B3] text-sm sm:text-base py-4 sm:py-6 h-auto"
-                    onClick={() => window.open("https://forms.google.com/evensia5-couple", "_blank")}
-                  >
-                    Couple Registration
-                  </Button>
-                </motion.div>
+                    <Button
+                      size="lg"
+                      className="bg-[#7D1806] hover:bg-[#7D1806]/90 text-[#F3E1B3] text-sm sm:text-base py-4 sm:py-6 h-auto"
+                      onClick={() => window.open("https://evensia.neetoform.com/91820973ab4066bb4356", "_blank")}
+                    >
+                      Individual Registration
+                    </Button>
+                    <Button
+                      size="lg"
+                      className="bg-[#7D1806] hover:bg-[#7D1806]/90 text-[#F3E1B3] text-sm sm:text-base py-4 sm:py-6 h-auto"
+                      onClick={() => window.open("https://evensia.neetoform.com/00621e89f062a17ab33e", "_blank")}
+                    >
+                      Couple Registration
+                    </Button>
+                  </motion.div>
+                </div>
               </DialogContent>
             </Dialog>
           </motion.div>
