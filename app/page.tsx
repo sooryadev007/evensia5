@@ -225,7 +225,7 @@ export default function Home() {
                 <div className="space-y-3 sm:space-y-4">
                   <div className="flex items-center gap-2 sm:gap-3">
                     <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-[#F3E1B3]" />
-                    <span className="text-sm sm:text-base text-[#F3E1B3]">January 25th, 2024</span>
+                    <span className="text-sm sm:text-base text-[#F3E1B3]">January 25-26th, 2024</span>
                   </div>
                   <div className="flex items-center gap-2 sm:gap-3">
                     <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-[#F3E1B3]" />
