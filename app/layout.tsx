@@ -1,9 +1,13 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Luxurious_Roman } from 'next/font/google';
 import { Analytics } from "@vercel/analytics/react";
 
-const inter = Inter({ subsets: ['latin'] });
+const luxuriousRoman = Luxurious_Roman({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-luxurious',
+});
 
 export const metadata: Metadata = {
   title: 'Evensia 5',
@@ -19,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${luxuriousRoman.variable}`}>
       <head>
         <link 
           rel="icon" 
@@ -34,7 +38,7 @@ export default function RootLayout({
           sizes="16x16"
         />
       </head>
-      <body className={inter.className}>
+      <body className={`${luxuriousRoman.className}`}>
         {children}
         <Analytics />
       </body>

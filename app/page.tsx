@@ -272,10 +272,9 @@ export default function Home() {
               viewport={{ once: true }}
               className="text-2xl sm:text-3xl font-bold text-[#F3E1B3] mb-6 sm:mb-8 text-center mt-12"
             >
-              Activities
             </motion.h3>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 mt-12">
               {/* Trekking Card */}
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
@@ -284,7 +283,7 @@ export default function Home() {
                 transition={{ duration: 0.5 }}
               >
                 <Card className="p-6 bg-[#1F1D17] border-[#F3E1B3]/20 shadow-lg overflow-hidden group">
-                  <div className="relative h-48 -mx-6 -mt-6 mb-6 overflow-hidden">
+                  <div className="relative h-80 sm:h-96 -mx-6 -mt-6 mb-6 overflow-hidden">
                     <Image
                       src="/10.jpg"
                       alt="Trekking"
@@ -310,7 +309,7 @@ export default function Home() {
                 transition={{ duration: 0.5, delay: 0.1 }}
               >
                 <Card className="p-6 bg-[#1F1D17] border-[#F3E1B3]/20 shadow-lg overflow-hidden group">
-                  <div className="relative h-48 -mx-6 -mt-6 mb-6 overflow-hidden">
+                  <div className="relative h-80 sm:h-96 -mx-6 -mt-6 mb-6 overflow-hidden">
                     <Image
                       src="/2.jpg"
                       alt="Campfire"
@@ -336,7 +335,7 @@ export default function Home() {
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
                 <Card className="p-6 bg-[#1F1D17] border-[#F3E1B3]/20 shadow-lg overflow-hidden group">
-                  <div className="relative h-48 -mx-6 -mt-6 mb-6 overflow-hidden">
+                  <div className="relative h-80 sm:h-96 -mx-6 -mt-6 mb-6 overflow-hidden">
                     <div className="absolute inset-0 bg-gray-800 flex items-center justify-center">
                       <span className="text-[#F3E1B3]/50 text-sm">Image Coming Soon</span>
                     </div>
@@ -359,7 +358,7 @@ export default function Home() {
                 transition={{ duration: 0.5, delay: 0.3 }}
               >
                 <Card className="p-6 bg-[#1F1D17] border-[#F3E1B3]/20 shadow-lg overflow-hidden group">
-                  <div className="relative h-48 -mx-6 -mt-6 mb-6 overflow-hidden">
+                  <div className="relative h-80 sm:h-96 -mx-6 -mt-6 mb-6 overflow-hidden">
                     <div className="absolute inset-0 bg-gray-800 flex items-center justify-center">
                       <span className="text-[#F3E1B3]/50 text-sm">Image Coming Soon</span>
                     </div>
