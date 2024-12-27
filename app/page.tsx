@@ -576,7 +576,7 @@ export default function Home() {
             <ContactCard
               name="Dan V Prabha"
               role="Publicity Outreach Coordinator"
-              phone="8590054416"
+              phone="8078126241"
             />
             <ContactCard
               name="Abhishek Suresh M K"
