@@ -128,8 +128,8 @@ export default function Home() {
                     <div className="space-y-4">
                       <p className="font-semibold text-[#F3E1B3]">Guidelines for Registration:</p>
                       <ul className="list-disc pl-4 space-y-2">
-                        <li>Click on the "register as" options below accordingly</li>
-                        <li>Fill the google forms correctly (Details will be used for certificates and recordation)</li>
+                        <li>Click on the &apos;Individual registration&apos; or &apos;Couple registration&apos; options below accordingly</li>
+                        <li>Fill the Forms correctly (Details will be used for certificates and recordation)</li>
                         <li>Once filled, you will receive an instant acknowledgment through email</li>
                         <li>Within 24 hours you will receive an email from our side providing you with the amount for the tickets with respect to your combinations and QR/UPI details for payment</li>
                         <li>Do the payment and reply the mail with proof (screen shot) and transaction id as contents</li>
@@ -452,7 +452,7 @@ export default function Home() {
           >
             <div 
               className="flex gap-1 sm:gap-2 animate-scroll overflow-x-auto touch-pan-x pb-4 cursor-grab active:cursor-grabbing snap-x snap-mandatory no-scrollbar -mx-4 sm:mx-0 px-4 sm:px-0"
-              style={{ 
+              style={{
                 scrollbarWidth: 'none',
                 msOverflowStyle: 'none',
                 WebkitOverflowScrolling: 'touch'
