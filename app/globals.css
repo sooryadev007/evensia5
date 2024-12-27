@@ -92,7 +92,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-90vw * 13 - 0.25rem * 12));
+    transform: translateX(calc(-90vw * 14 - 0.25rem * 13));
   }
 }
 
@@ -111,7 +111,7 @@
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-400px * 13 - 0.5rem * 12));
+      transform: translateX(calc(-400px * 14 - 0.5rem * 13));
     }
   }
 }

@@ -285,7 +285,7 @@ export default function Home() {
                 <Card className="p-6 bg-[#1F1D17] border-[#F3E1B3]/20 shadow-lg overflow-hidden group">
                   <div className="relative h-80 sm:h-96 -mx-6 -mt-6 mb-6 overflow-hidden">
                     <Image
-                      src="/10.jpg"
+                      src="/15.jpg"
                       alt="Trekking"
                       fill
                       className="object-cover transition-transform duration-300 group-hover:scale-110"
@@ -336,9 +336,12 @@ export default function Home() {
               >
                 <Card className="p-6 bg-[#1F1D17] border-[#F3E1B3]/20 shadow-lg overflow-hidden group">
                   <div className="relative h-80 sm:h-96 -mx-6 -mt-6 mb-6 overflow-hidden">
-                    <div className="absolute inset-0 bg-gray-800 flex items-center justify-center">
-                      <span className="text-[#F3E1B3]/50 text-sm">Image Coming Soon</span>
-                    </div>
+                    <Image
+                      src="/stock.jpg"
+                      alt="Sky Lantern Night"
+                      fill
+                      className="object-cover transition-transform duration-300 group-hover:scale-110"
+                    />
                     <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent" />
                     <h3 className="absolute top-4 left-6 text-2xl font-bold text-[#F3E1B3] transform group-hover:scale-105 transition-transform">
                       Sky Lantern Night
@@ -581,7 +584,7 @@ export default function Home() {
                 WebkitOverflowScrolling: 'touch'
               }}
             >
-              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].map((index) => (
+              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14].map((index) => (
                 <motion.div
                   key={index}
                   className="relative flex-none w-[90vw] sm:w-[400px] h-[250px] sm:h-[300px] rounded-xl overflow-hidden snap-center"
@@ -605,7 +608,7 @@ export default function Home() {
                 </motion.div>
               ))}
               {/* Duplicate images for infinite scroll effect */}
-              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].map((index) => (
+              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14].map((index) => (
                 <motion.div
                   key={`duplicate-${index}`}
                   className="relative flex-none w-[90vw] sm:w-[400px] h-[250px] sm:h-[300px] rounded-xl overflow-hidden snap-center"
@@ -613,7 +616,7 @@ export default function Home() {
                   whileInView={{ x: 0, opacity: 1 }}
                   transition={{ 
                     duration: 0.5,
-                    delay: (index + 13) * 0.1,
+                    delay: (index + 14) * 0.1,
                     ease: "easeOut"
                   }}
                 >
