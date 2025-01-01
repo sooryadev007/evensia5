@@ -84,7 +84,8 @@ const config: Config = {
         'accordion-up': 'accordion-up 0.2s ease-out',
       },
       fontFamily: {
-        sans: ['var(--font-luxurious)', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-playfair)', 'system-ui', 'serif'],
+        playfair: ["var(--font-playfair)"],
       },
     },
   },

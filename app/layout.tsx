@@ -1,12 +1,12 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Luxurious_Roman } from 'next/font/google';
+import { Playfair_Display } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 
-const luxuriousRoman = Luxurious_Roman({
-  weight: '400',
-  subsets: ['latin'],
-  variable: '--font-luxurious',
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
+  variable: "--font-playfair",
 });
 
 export const metadata: Metadata = {
@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${luxuriousRoman.variable}`}>
+    <html lang="en" className={`${playfair.variable}`}>
       <head>
         <link 
           rel="icon" 
@@ -38,7 +38,7 @@ export default function RootLayout({
           sizes="16x16"
         />
       </head>
-      <body className={`${luxuriousRoman.className}`}>
+      <body className="font-playfair">
         {children}
         <Analytics />
       </body>
