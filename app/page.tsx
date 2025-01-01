@@ -240,7 +240,7 @@ export default function Home() {
                 <div className="space-y-3 sm:space-y-4">
                   <div className="flex items-center gap-2 sm:gap-3">
                     <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-[#F3E1B3]" />
-                    <span className="text-sm sm:text-base text-[#F3E1B3]">January 25-26th, 2024</span>
+                    <span className="text-sm sm:text-base text-[#F3E1B3]">January 25-26th, 2025</span>
                   </div>
                   <div className="flex items-center gap-2 sm:gap-3">
                     <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-[#F3E1B3]" />
@@ -389,172 +389,184 @@ export default function Home() {
         className="py-12 sm:py-20 px-4 bg-[#1F1D17]"
       >
         <div className="max-w-6xl mx-auto">
-          <motion.h2 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-3xl sm:text-4xl font-bold text-[#F3E1B3] mb-8 sm:mb-12 text-center"
-          >
-            Workshops & Speakers
-          </motion.h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
-            {/* Web Development Workshop Card */}
-            <motion.div
+          {/* Speakers Section */}
+          <motion.div className="mb-20">
+            <motion.h2 
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              animate={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
+              className="text-3xl sm:text-4xl font-bold text-[#F3E1B3] mb-8 sm:mb-12 text-center"
             >
-              <Card className="p-6 bg-[#1F1D17] border-[#F3E1B3]/20 shadow-lg overflow-hidden">
-                <div className="relative h-48 -mx-6 -mt-6 mb-6">
-                  <div className="absolute inset-0 bg-gray-800 flex items-center justify-center">
-                    <span className="text-[#F3E1B3]/50 text-sm">Image Coming Soon</span>
+              Speakers
+            </motion.h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+              {/* Speaker 1 */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+              >
+                <Card className="p-6 bg-[#1F1D17] border-[#F3E1B3]/20 shadow-lg overflow-hidden">
+                  <div className="relative h-64 -mx-6 -mt-6 mb-6">
+                    <Image
+                      src="/speak1.jpg"
+                      alt="Mathews Kuriakose"
+                      fill
+                      className="object-cover"
+                    />
                   </div>
-                  <div className="absolute inset-0 bg-black/50" />
-                  <h3 className="absolute bottom-4 left-6 text-2xl font-bold text-[#F3E1B3]">
-                    Web Development Workshop
-                  </h3>
-                </div>
-                <div className="space-y-4">
-                  <p className="text-[#F3E1B3] leading-relaxed">
-                    Master modern web development technologies and best practices through hands-on coding sessions.
-                  </p>
-                  <ul className="space-y-2 text-[#F3E1B3]">
-                    <li className="flex items-center gap-2">
-                      <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
-                      <span>Frontend Frameworks (React, Next.js)</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
-                      <span>Backend Development (Node.js)</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
-                      <span>Database Design & API Development</span>
-                    </li>
-                  </ul>
-                </div>
-              </Card>
-            </motion.div>
+                  <div className="space-y-3">
+                    <h3 className="text-xl font-bold text-[#F3E1B3]">Mathews Kuriakose</h3>
+                    <p className="text-[#F3E1B3]/80 text-sm">Software DEVELOPER @ 6D technologies</p>
+                  </div>
+                </Card>
+              </motion.div>
 
-            {/* AI/ML Workshop Card */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              <Card className="p-6 bg-[#1F1D17] border-[#F3E1B3]/20 shadow-lg overflow-hidden">
-                <div className="relative h-48 -mx-6 -mt-6 mb-6">
-                  <div className="absolute inset-0 bg-gray-800 flex items-center justify-center">
-                    <span className="text-[#F3E1B3]/50 text-sm">Image Coming Soon</span>
+              {/* Speaker 2 */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+              >
+                <Card className="p-6 bg-[#1F1D17] border-[#F3E1B3]/20 shadow-lg overflow-hidden">
+                  <div className="relative h-64 -mx-6 -mt-6 mb-6">
+                    <Image
+                      src="/speak2.jpg"
+                      alt="Mrudul Shaji"
+                      fill
+                      className="object-cover object-bottom"
+                    />
                   </div>
-                  <div className="absolute inset-0 bg-black/50" />
-                  <h3 className="absolute bottom-4 left-6 text-2xl font-bold text-[#F3E1B3]">
-                    AI & ML Workshop
-                  </h3>
-                </div>
-                <div className="space-y-4">
-                  <p className="text-[#F3E1B3] leading-relaxed">
-                    Dive into the world of artificial intelligence and machine learning with practical implementations.
-                  </p>
-                  <ul className="space-y-2 text-[#F3E1B3]">
-                    <li className="flex items-center gap-2">
-                      <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
-                      <span>Deep Learning Fundamentals</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
-                      <span>Computer Vision Applications</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
-                      <span>Natural Language Processing</span>
-                    </li>
-                  </ul>
-                </div>
-              </Card>
-            </motion.div>
+                  <div className="space-y-3">
+                    <h3 className="text-xl font-bold text-[#F3E1B3]">Mrudul Shaji</h3>
+                    <p className="text-[#F3E1B3]/80 text-sm">Software DEVELOPER @ 6D technologies</p>
+                  </div>
+                </Card>
+              </motion.div>
 
-            {/* Industry Expert Speaker Card */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-            >
-              <Card className="p-6 bg-[#1F1D17] border-[#F3E1B3]/20 shadow-lg overflow-hidden">
-                <div className="relative h-48 -mx-6 -mt-6 mb-6">
-                  <div className="absolute inset-0 bg-gray-800 flex items-center justify-center">
-                    <span className="text-[#F3E1B3]/50 text-sm">Image Coming Soon</span>
+              {/* Speaker 3 */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+              >
+                <Card className="p-6 bg-[#1F1D17] border-[#F3E1B3]/20 shadow-lg overflow-hidden">
+                  <div className="relative h-64 -mx-6 -mt-6 mb-6">
+                    <Image
+                      src="/speak3.jpg"
+                      alt="Vishnu Prathap"
+                      fill
+                      className="object-cover"
+                      style={{ objectPosition: '50% 75%' }}
+                    />
                   </div>
-                  <div className="absolute inset-0 bg-black/50" />
-                  <h3 className="absolute bottom-4 left-6 text-2xl font-bold text-[#F3E1B3]">
-                    Industry Leaders Panel
-                  </h3>
-                </div>
-                <div className="space-y-4">
-                  <p className="text-[#F3E1B3] leading-relaxed">
-                    Connect with industry veterans sharing insights on technology trends and career growth.
-                  </p>
-                  <ul className="space-y-2 text-[#F3E1B3]">
-                    <li className="flex items-center gap-2">
-                      <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
-                      <span>Tech Leadership Insights</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
-                      <span>Future of Technology</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
-                      <span>Innovation in Tech Industry</span>
-                    </li>
-                  </ul>
-                </div>
-              </Card>
-            </motion.div>
+                  <div className="space-y-3">
+                    <h3 className="text-xl font-bold text-[#F3E1B3]">Vishnu Prathap</h3>
+                    <p className="text-[#F3E1B3]/80 text-sm">Implementation Engineer @ 6D Technologies</p>
+                  </div>
+                </Card>
+              </motion.div>
+            </div>
+          </motion.div>
 
-            {/* Academic Speakers Card */}
-            <motion.div
+          {/* Workshops Section */}
+          <motion.div>
+            <motion.h2 
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              animate={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.4 }}
+              className="text-3xl sm:text-4xl font-bold text-[#F3E1B3] mb-8 sm:mb-12 text-center"
             >
-              <Card className="p-6 bg-[#1F1D17] border-[#F3E1B3]/20 shadow-lg overflow-hidden">
-                <div className="relative h-48 -mx-6 -mt-6 mb-6">
-                  <div className="absolute inset-0 bg-gray-800 flex items-center justify-center">
-                    <span className="text-[#F3E1B3]/50 text-sm">Image Coming Soon</span>
+              Workshops
+            </motion.h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+              {/* Web Development Workshop Card */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+              >
+                <Card className="p-6 bg-[#1F1D17] border-[#F3E1B3]/20 shadow-lg overflow-hidden">
+                  <div className="relative h-64 sm:h-72 -mx-6 -mt-6 mb-6">
+                    <div className="absolute inset-0 bg-gray-800 flex items-center justify-center">
+                      <span className="text-[#F3E1B3]/50 text-sm">Image Coming Soon</span>
+                    </div>
+                    <div className="absolute inset-0 bg-black/50" />
+                    <h3 className="absolute bottom-4 left-6 text-2xl font-bold text-[#F3E1B3]">
+                      Web Development Workshop
+                    </h3>
                   </div>
-                  <div className="absolute inset-0 bg-black/50" />
-                  <h3 className="absolute bottom-4 left-6 text-2xl font-bold text-[#F3E1B3]">
-                    Research & Innovation Talks
-                  </h3>
-                </div>
-                <div className="space-y-4">
-                  <p className="text-[#F3E1B3] leading-relaxed">
-                    Discover cutting-edge research and innovations from academic experts and researchers.
-                  </p>
-                  <ul className="space-y-2 text-[#F3E1B3]">
-                    <li className="flex items-center gap-2">
-                      <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
-                      <span>Emerging Technologies</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
-                      <span>Research Breakthroughs</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
-                      <span>Academic Perspectives</span>
-                    </li>
-                  </ul>
-                </div>
-              </Card>
-            </motion.div>
-          </div>
+                  <div className="space-y-4">
+                    <p className="text-[#F3E1B3] leading-relaxed">
+                      Master modern web development technologies and best practices through hands-on coding sessions.
+                    </p>
+                    <ul className="space-y-2 text-[#F3E1B3]">
+                      <li className="flex items-center gap-2">
+                        <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
+                        <span>Frontend Frameworks (React, Next.js)</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
+                        <span>Backend Development (Node.js)</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
+                        <span>Database Design & API Development</span>
+                      </li>
+                    </ul>
+                  </div>
+                </Card>
+              </motion.div>
+
+              {/* VR Workshop Card - Replacing AI/ML Workshop Card */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+              >
+                <Card className="p-6 bg-[#1F1D17] border-[#F3E1B3]/20 shadow-lg overflow-hidden">
+                  <div className="relative h-64 sm:h-72 -mx-6 -mt-6 mb-6">
+                    <Image
+                      src="/vr.jpg"
+                      alt="VR Workshop"
+                      fill
+                      className="object-cover"
+                    />
+                    <div className="absolute inset-0 bg-black/50" />
+                    <h3 className="absolute bottom-4 left-6 text-2xl font-bold text-[#F3E1B3]">
+                      Virtual Reality Workshop
+                    </h3>
+                  </div>
+                  <div className="space-y-4">
+                    <p className="text-[#F3E1B3] leading-relaxed">
+                      Experience the future of technology with hands-on virtual reality development and implementation.
+                    </p>
+                    <ul className="space-y-2 text-[#F3E1B3]">
+                      <li className="flex items-center gap-2">
+                        <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
+                        <span>VR Development Fundamentals</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
+                        <span>3D Environment Design</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
+                        <span>Interactive VR Applications</span>
+                      </li>
+                    </ul>
+                  </div>
+                </Card>
+              </motion.div>
+            </div>
+          </motion.div>
         </div>
       </section>
 
@@ -725,7 +737,7 @@ export default function Home() {
             />
             <ContactCard
               name="Abhishek Suresh M K"
-              role="Sponsorship and Finance Coordinator"
+              role="Registration and Volunteer Coordinator"
               phone="9496452970"
             />
           </div>
