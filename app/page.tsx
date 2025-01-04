@@ -223,7 +223,9 @@ export default function Home() {
             className="grid grid-cols-1 gap-6 sm:gap-8"
           >
             <Card className="p-8 sm:p-10 shadow-lg bg-[#1F1D17] border-[#F3E1B3]/20">
-              <h3 className="text-4xl sm:text-5xl font-semibold text-[#F3E1B3] mb-6 sm:mb-8">A Legacy of Excellence</h3>
+              <h3 className="text-4xl sm:text-5xl font-semibold text-[#F3E1B3] mb-6 sm:mb-8">
+                A Legacy of Excellence
+              </h3>
               <div className="space-y-8 text-[#F3E1B3]">
                 <p className="text-2xl sm:text-3xl leading-relaxed">
                   Evensia is an intercollegiate event that was the inauguration of IEEE CS Chapter of CE Munnar in 2016. The second, third and fourth editions of Evensia were two-day technical symposiums held in November 2017, October 2019 and January 2022 respectively.
@@ -235,7 +237,9 @@ export default function Home() {
             </Card>
 
             <Card className="p-8 sm:p-10 shadow-lg bg-[#1F1D17] border-[#F3E1B3]/20">
-              <h3 className="text-4xl sm:text-5xl font-semibold text-[#F3E1B3] mb-6 sm:mb-8">Event Highlights</h3>
+              <h3 className="text-4xl sm:text-5xl font-semibold text-[#F3E1B3] mb-6 sm:mb-8">
+                Event Highlights
+              </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-4 sm:space-y-6">
                   <div className="flex items-center gap-4 sm:gap-5">
