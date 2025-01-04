@@ -18,7 +18,7 @@ export default function Footer() {
             </p>
           </div>
         </div>
-        
+
         <div className="mt-8 sm:mt-12">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 place-items-center">
             <div className="w-40 lg:w-32">

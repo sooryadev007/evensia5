@@ -10,7 +10,7 @@ export default function CountdownTimer() {
 
   function calculateTimeLeft() {
     const difference = targetDate - new Date().getTime()
-    
+
     if (difference <= 0) {
       return { days: 0, hours: 0, minutes: 0, seconds: 0 }
     }

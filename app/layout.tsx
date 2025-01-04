@@ -1,12 +1,13 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Playfair_Display } from "next/font/google";
+import { Birthstone } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
-  variable: "--font-playfair",
+const birthstone = Birthstone({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-birthstone',
 });
 
 export const metadata: Metadata = {
@@ -23,22 +24,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${playfair.variable}`}>
+    <html lang="en" className={birthstone.variable}>
       <head>
-        <link 
-          rel="icon" 
-          type="image/png" 
+        <link
+          rel="icon"
+          type="image/png"
           href="/e2.png"
           sizes="32x32"
         />
-        <link 
-          rel="icon" 
-          type="image/png" 
+        <link
+          rel="icon"
+          type="image/png"
           href="/e2.png"
           sizes="16x16"
         />
       </head>
-      <body className="font-playfair">
+      <body className="font-birthstone">
         {children}
         <Analytics />
       </body>
