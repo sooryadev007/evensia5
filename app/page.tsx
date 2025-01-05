@@ -482,9 +482,12 @@ export default function Home() {
               >
                 <Card className="p-6 bg-[#1F1D17] border-[#F3E1B3]/20 shadow-lg overflow-hidden">
                   <div className="relative h-64 sm:h-72 -mx-6 -mt-6 mb-6">
-                    <div className="absolute inset-0 bg-gray-800 flex items-center justify-center">
-                      <span className="text-[#F3E1B3]/50 text-sm">Image Coming Soon</span>
-                    </div>
+                    <Image
+                      src="/photography.jpg"
+                      alt="Photography Workshop"
+                      fill
+                      className="object-cover"
+                    />
                     <div className="absolute inset-0 bg-black/50" />
                     <h3 className="absolute bottom-4 left-6 text-2xl font-bold font-young-serif text-[#F3E1B3]">
                       Photography Workshop
