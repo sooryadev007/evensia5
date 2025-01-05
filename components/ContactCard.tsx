@@ -15,7 +15,7 @@ export default function ContactCard({ name, role, phone, className = "text-base 
   return (
     <Card className="p-6 bg-[#1F1D17] border-[#F3E1B3]/20 shadow-lg">
       <div className="space-y-2">
-        <h3 className={`font-semibold text-[#F3E1B3] ${className}`}>{name}</h3>
+        <h3 className={`font-young-serif text-[#F3E1B3] ${className}`}>{name}</h3>
         <p className={`text-[#F3E1B3]/80 ${className}`}>{role}</p>
         <p className={`text-[#F3E1B3]/80 ${className}`}>{phone}</p>
       </div>

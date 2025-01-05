@@ -87,6 +87,7 @@ const config: Config = {
         'kalam-light': ['"Kalam"', 'serif'],
         'kalam-regular': ['"Kalam"', 'serif'],
         'young-serif': ['"Young Serif"', 'serif'],
+        'prompt': ['"Prompt"', 'sans-serif'],
       },
     },
   },

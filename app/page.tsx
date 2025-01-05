@@ -223,10 +223,10 @@ export default function Home() {
             className="grid grid-cols-1 gap-6 sm:gap-8"
           >
             <Card className="p-8 sm:p-10 shadow-lg bg-[#1F1D17] border-[#F3E1B3]/20">
-              <h3 className="text-4xl sm:text-5xl font-semibold text-[#F3E1B3] mb-6 sm:mb-8">
+              <h3 className="text-4xl sm:text-5xl font-young-serif text-[#F3E1B3] mb-6 sm:mb-8">
                 A Legacy of Excellence
               </h3>
-              <div className="space-y-8 text-[#F3E1B3]">
+              <div className="space-y-8 text-[#F3E1B3] font-prompt">
                 <p className="text-lg sm:text-xl leading-relaxed">
                   Evensia is an intercollegiate event that was the inauguration of IEEE CS Chapter of CE Munnar in 2016. The second, third and fourth editions of Evensia were two-day technical symposiums held in November 2017, October 2019 and January 2022 respectively.
                 </p>
@@ -237,7 +237,7 @@ export default function Home() {
             </Card>
 
             <Card className="p-8 sm:p-10 shadow-lg bg-[#1F1D17] border-[#F3E1B3]/20">
-              <h3 className="text-4xl sm:text-5xl font-semibold text-[#F3E1B3] mb-6 sm:mb-8">
+              <h3 className="text-4xl sm:text-5xl font-young-serif text-[#F3E1B3] mb-6 sm:mb-8">
                 Event Highlights
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -259,7 +259,7 @@ export default function Home() {
                     <span className="text-lg sm:text-xl text-[#F3E1B3]">Open to All Engineering Students</span>
                   </div>
                 </div>
-                <div className="space-y-4 sm:space-y-6 text-[#F3E1B3]">
+                <div className="space-y-4 sm:space-y-6 text-[#F3E1B3] font-prompt">
                   <p className="text-lg sm:text-xl leading-relaxed">
                     EVENSIA 5 continues the legacy of excellence while bringing fresh innovations and opportunities for participants. Join us for a day filled with technical workshops, competitions, and networking opportunities.
                   </p>
@@ -295,7 +295,7 @@ export default function Home() {
                       className="object-cover transition-transform duration-300 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent" />
-                    <h3 className="absolute top-4 left-6 text-2xl font-bold text-[#F3E1B3] transform group-hover:scale-105 transition-transform">
+                    <h3 className="absolute top-4 left-6 text-2xl font-bold font-young-serif text-[#F3E1B3] transform group-hover:scale-105 transition-transform">
                       Trekking
                     </h3>
                   </div>
@@ -321,7 +321,7 @@ export default function Home() {
                       className="object-cover transition-transform duration-300 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent" />
-                    <h3 className="absolute top-4 left-6 text-2xl font-bold text-[#F3E1B3] transform group-hover:scale-105 transition-transform">
+                    <h3 className="absolute top-4 left-6 text-2xl font-bold font-young-serif text-[#F3E1B3] transform group-hover:scale-105 transition-transform">
                       Campfire
                     </h3>
                   </div>
@@ -347,7 +347,7 @@ export default function Home() {
                       className="object-cover transition-transform duration-300 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent" />
-                    <h3 className="absolute top-4 left-6 text-2xl font-bold text-[#F3E1B3] transform group-hover:scale-105 transition-transform">
+                    <h3 className="absolute top-4 left-6 text-2xl font-bold font-young-serif text-[#F3E1B3] transform group-hover:scale-105 transition-transform">
                       Sky Lantern Night
                     </h3>
                   </div>
@@ -373,7 +373,7 @@ export default function Home() {
                       className="object-cover transition-transform duration-300 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent" />
-                    <h3 className="absolute top-4 left-6 text-2xl font-bold text-[#F3E1B3] transform group-hover:scale-105 transition-transform">
+                    <h3 className="absolute top-4 left-6 text-2xl font-bold font-young-serif text-[#F3E1B3] transform group-hover:scale-105 transition-transform">
                       Cultural Night
                     </h3>
                   </div>
@@ -486,17 +486,17 @@ export default function Home() {
                       <span className="text-[#F3E1B3]/50 text-sm">Image Coming Soon</span>
                     </div>
                     <div className="absolute inset-0 bg-black/50" />
-                    <h3 className="absolute bottom-4 left-6 text-2xl font-bold text-[#F3E1B3]">
+                    <h3 className="absolute bottom-4 left-6 text-2xl font-bold font-young-serif text-[#F3E1B3]">
                       Photography Workshop
                     </h3>
                   </div>
                   <div className="space-y-4">
-                    <p className="text-[#F3E1B3] leading-relaxed text-base sm:text-lg">
+                    <p className="text-[#F3E1B3] leading-relaxed text-lg sm:text-xl font-prompt">
                       The Photography Workshop at EVENSIA 5.0 offers an excellent opportunity to enhance your photography skills, whether you're a beginner or an experienced enthusiast. Participants will learn key techniques, creative approaches, and expert tips for capturing stunning visuals. The session will cover various aspects of photography, including composition, lighting, and editing, helping you improve your ability to tell compelling stories through your images.
                     </p>
                     <div className="space-y-2">
-                      <p className="text-[#F3E1B3] font-semibold">The workshop will be led by Sebinster Francis:</p>
-                      <ul className="space-y-2 text-[#F3E1B3]">
+                      <p className="text-[#F3E1B3] font-semibold text-lg sm:text-xl">The workshop will be led by Sebinster Francis:</p>
+                      <ul className="space-y-2 text-[#F3E1B3] text-lg sm:text-xl">
                         <li className="flex items-center gap-2">
                           <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
                           <span>Photographer, Content Creator, and Social Media Influencer</span>
@@ -515,7 +515,7 @@ export default function Home() {
                         </li>
                       </ul>
                     </div>
-                    <p className="text-[#F3E1B3] leading-relaxed">
+                    <p className="text-[#F3E1B3] leading-relaxed text-lg sm:text-xl">
                       Join us for this insightful session and take your photography to the next level!
                     </p>
                   </div>
@@ -538,23 +538,23 @@ export default function Home() {
                       className="object-cover"
                     />
                     <div className="absolute inset-0 bg-black/50" />
-                    <h3 className="absolute bottom-4 left-6 text-2xl font-bold text-[#F3E1B3]">
+                    <h3 className="absolute bottom-4 left-6 text-2xl font-bold font-young-serif text-[#F3E1B3]">
                       AR/VR Workshop
                     </h3>
                   </div>
                   <div className="space-y-4">
-                    <p className="text-[#F3E1B3] leading-relaxed">
+                    <p className="text-[#F3E1B3] leading-relaxed text-lg sm:text-xl font-prompt">
                       The AR/VR Workshop at EVENSIA 5.0 offers an exciting opportunity to explore the transformative potential of immersive technologies.
                     </p>
-                    <p className="text-[#F3E1B3] leading-relaxed">
+                    <p className="text-[#F3E1B3] leading-relaxed text-lg sm:text-xl font-prompt">
                       Augmented Reality (AR) enhances the real world by overlaying digital content, creating interactive experiences, while Virtual Reality (VR) immerses users in fully simulated environments, engaging them beyond the real world's limits. These technologies are reshaping industries such as gaming, healthcare, education, and architecture.
                     </p>
-                    <p className="text-[#F3E1B3] leading-relaxed">
+                    <p className="text-[#F3E1B3] leading-relaxed text-lg sm:text-xl font-prompt">
                       In this workshop, participants will gain hands-on experience in designing and developing AR/VR applications. They will learn how to create engaging virtual environments and dynamic augmented content, and explore the latest trends, tools, and frameworks used by industry professionals to bring innovative ideas to life.
                     </p>
                     <div className="space-y-2">
-                      <p className="text-[#F3E1B3] font-semibold">The session will be led by:</p>
-                      <ul className="space-y-2 text-[#F3E1B3]">
+                      <p className="text-[#F3E1B3] font-semibold text-lg sm:text-xl">The session will be led by:</p>
+                      <ul className="space-y-2 text-[#F3E1B3] text-lg sm:text-xl">
                         <li className="flex items-center gap-2">
                           <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
                           <span>Mathews Kuriakose, Software Developer</span>
