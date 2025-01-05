@@ -91,7 +91,7 @@ export default function Home() {
             transition={{ delay: 0.6 }}
             className="text-2xl sm:text-3xl md:text-4xl text-[#F3E1B3] mb-8 px-4 font-light"
           >
-            Where Technology Meets Romance
+            Tech Meets Romance
           </motion.p>
 
           {/* Countdown Timer */}
@@ -227,10 +227,10 @@ export default function Home() {
                 A Legacy of Excellence
               </h3>
               <div className="space-y-8 text-[#F3E1B3] font-prompt">
-                <p className="text-lg sm:text-xl leading-relaxed">
+                <p className="text-lg sm:text-xl leading-relaxed font-prompt">
                   Evensia is an intercollegiate event that was the inauguration of IEEE CS Chapter of CE Munnar in 2016. The second, third and fourth editions of Evensia were two-day technical symposiums held in November 2017, October 2019 and January 2022 respectively.
                 </p>
-                <p className="text-lg sm:text-xl leading-relaxed">
+                <p className="text-lg sm:text-xl leading-relaxed font-prompt">
                   The four previous editions saw a great participation from students across the state. Evensia is a combination of technology culture and humanity, each edition of Evensia has promised this to all the participants. This event has always been a part of the sweetest memories in the mind of all participants.
                 </p>
               </div>
@@ -260,10 +260,10 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="space-y-4 sm:space-y-6 text-[#F3E1B3] font-prompt">
-                  <p className="text-lg sm:text-xl leading-relaxed">
+                  <p className="text-lg sm:text-xl leading-relaxed font-prompt">
                     EVENSIA 5 continues the legacy of excellence while bringing fresh innovations and opportunities for participants. Join us for a day filled with technical workshops, competitions, and networking opportunities.
                   </p>
-                  <p className="text-lg sm:text-xl leading-relaxed">
+                  <p className="text-lg sm:text-xl leading-relaxed font-prompt">
                     Experience the perfect blend of technology, culture, and humanity that has made Evensia a memorable event for participants throughout its history.
                   </p>
                 </div>
@@ -299,7 +299,7 @@ export default function Home() {
                       Trekking
                     </h3>
                   </div>
-                  <p className="text-[#F3E1B3] leading-relaxed">
+                  <p className="text-[#F3E1B3] leading-relaxed font-prompt">
                     Experience the breathtaking beauty of Munnar through guided treks, exploring its scenic landscapes and natural wonders.
                   </p>
                 </Card>
@@ -325,7 +325,7 @@ export default function Home() {
                       Campfire
                     </h3>
                   </div>
-                  <p className="text-[#F3E1B3] leading-relaxed">
+                  <p className="text-[#F3E1B3] leading-relaxed font-prompt">
                     Gather around the warmth of a campfire, share stories, and create lasting memories under the starlit sky.
                   </p>
                 </Card>
@@ -351,7 +351,7 @@ export default function Home() {
                       Sky Lantern Night
                     </h3>
                   </div>
-                  <p className="text-[#F3E1B3] leading-relaxed">
+                  <p className="text-[#F3E1B3] leading-relaxed font-prompt">
                     Light up the night sky with beautiful lanterns, making wishes and creating a magical atmosphere together.
                   </p>
                 </Card>
@@ -377,7 +377,7 @@ export default function Home() {
                       Cultural Night
                     </h3>
                   </div>
-                  <p className="text-[#F3E1B3] leading-relaxed">
+                  <p className="text-[#F3E1B3] leading-relaxed font-prompt">
                     Immerse yourself in a vibrant celebration of arts, music, and dance showcasing diverse cultural performances.
                   </p>
                 </Card>
@@ -496,7 +496,7 @@ export default function Home() {
                     </p>
                     <div className="space-y-2">
                       <p className="text-[#F3E1B3] text-lg sm:text-xl font-prompt">The workshop will be led by <span className="font-bold">Sebinster Francis</span>, a highly experienced photographer, content creator, and social media influencer. His expertise includes:</p>
-                      <ul className="space-y-2 text-[#F3E1B3] text-lg sm:text-xl">
+                      <ul className="space-y-2 text-[#F3E1B3] text-lg sm:text-xl font-prompt">
                         <li className="flex items-center gap-2">
                           <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
                           <span>Photographer, Content Creator, and Social Media Influencer</span>
@@ -515,7 +515,7 @@ export default function Home() {
                         </li>
                       </ul>
                     </div>
-                    <p className="text-[#F3E1B3] leading-relaxed text-lg sm:text-xl">
+                    <p className="text-[#F3E1B3] leading-relaxed text-lg sm:text-xl font-prompt">
                       Don't miss this opportunity to capture stunning images like a pro!
                     </p>
                   </div>
@@ -550,8 +550,8 @@ export default function Home() {
                       Participants will gain hands-on experience in designing AR/VR applications, creating interactive augmented content, and building virtual environments using industry-relevant tools and frameworks.
                     </p>
                     <div className="space-y-2">
-                      <p className="text-[#F3E1B3] text-lg sm:text-xl">The session will be led by:</p>
-                      <ul className="space-y-2 text-[#F3E1B3] text-lg sm:text-xl">
+                      <p className="text-[#F3E1B3] text-lg sm:text-xl font-prompt">The session will be led by:</p>
+                      <ul className="space-y-2 text-[#F3E1B3] text-lg sm:text-xl font-prompt">
                         <li className="flex items-center gap-2">
                           <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
                           <span><span className="font-bold">Mathews Kuriakose</span>, Software Developer</span>
@@ -700,9 +700,13 @@ export default function Home() {
                 </div>
               </div>
               <div className="mt-6 text-[#F3E1B3]">
-                <h3 className="text-xl font-semibold mb-2">College of Engineering Munnar</h3>
-                <p className="text-[#F3E1B3]/80">Near Govt. High School, Munnar P.O</p>
-                <p className="text-[#F3E1B3]/80">Idukki, Kerala - 685612</p>
+                <h3 className="text-xl font-prompt mb-2">College of Engineering Munnar</h3>
+                <p className="text-[#F3E1B3]/80 text-base sm:text-lg font-prompt">
+                  College of Engineering Munnar
+                  Near Govt. High School, Munnar P.O
+                  
+                  Idukki, Kerala - 685612
+                </p>
               </div>
             </Card>
           </motion.div>

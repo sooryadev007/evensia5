@@ -7,13 +7,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
           <div className="text-center md:text-left">
             <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 font-young-serif text-[#F3E1B3]">About IEEE SB CE Munnar</h3>
-            <p className="text-xs sm:text-sm leading-relaxed text-[#F3E1B3]/80 font-prompt">
+            <p className="text-sm sm:text-base leading-relaxed text-[#F3E1B3]/80 font-prompt">
               Established in 2005, IEEE SB College of Engineering Munnar hosts four IEEE technical society student chapters and a women in engineering affinity group. With active participation from students across CSE, ECE, EEE, and ME departments, we are committed to fostering technical and creative skills among students.
             </p>
           </div>
           <div className="text-center md:text-left">
             <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 font-young-serif text-[#F3E1B3]">Evensia 5</h3>
-            <p className="text-xs sm:text-sm leading-relaxed text-[#F3E1B3]/80 font-prompt">
+            <p className="text-sm sm:text-base leading-relaxed text-[#F3E1B3]/80 font-prompt">
               Evensia 5 continues the legacy of innovation and impact, bringing together technology, culture, and humanity. Join us for this celebrated technical symposium that promises learning, innovation, and collaboration.
             </p>
           </div>
