@@ -92,7 +92,7 @@ export default function Home() {
             transition={{ delay: 0.6 }}
             className="text-2xl sm:text-3xl md:text-4xl text-[#F3E1B3] mb-8 px-4 font-light"
           >
-            The legacy of excellence
+            Legacy of excellence
           </motion.p>
 
           {/* Countdown Timer */}
