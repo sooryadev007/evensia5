@@ -20,59 +20,54 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 sm:mt-12">
-          <div className="flex flex-col sm:grid sm:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-8">
-            <div className="w-full sm:w-36 lg:w-32 col-span-full sm:col-span-1 flex justify-center mb-6 sm:mb-0">
-              <div className="w-48 sm:w-36 lg:w-32">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-8 place-items-center">
+            <div className="w-32 sm:w-36 lg:w-32">
+              <Image
+                src="/IEEE-CS_LogoTM-white (3).png"
+                alt="IEEE CS Logo"
+                width={200}
+                height={80}
+                className="w-full h-auto object-contain"
+              />
+            </div>
+            <div className="w-32 sm:w-36 lg:w-32">
+              <Image
+                src="/logo-white.png"
+                alt="IEEE Logo"
+                width={200}
+                height={80}
+                className="w-full h-auto object-contain"
+              />
+            </div>
+            <div className="w-32 sm:w-36 lg:w-32">
+              <Image
+                src="/SB logo color.png"
+                alt="IEEE SB Logo"
+                width={200}
+                height={80}
+                className="w-full h-auto object-contain"
+              />
+            </div>
+            <div className="w-32 sm:w-36 lg:w-32 flex justify-center">
+              <div className="w-24 sm:w-28 lg:w-24">
                 <Image
-                  src="/IEEE-CS_LogoTM-white (3).png"
-                  alt="IEEE CS Logo"
+                  src="/ydyud.png"
+                  alt="YDYUD Logo"
                   width={200}
                   height={80}
                   className="w-full h-auto object-contain"
                 />
               </div>
             </div>
-
-            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 col-span-full sm:col-span-2 lg:col-span-4 place-items-center">
-              <div className="w-32 sm:w-36 lg:w-32">
+            <div className="w-32 sm:w-36 lg:w-32 flex justify-center">
+              <div className="w-24 sm:w-28 lg:w-24">
                 <Image
-                  src="/logo-white.png"
-                  alt="IEEE Logo"
+                  src="/acses.png"
+                  alt="ACSES Logo"
                   width={200}
                   height={80}
                   className="w-full h-auto object-contain"
                 />
-              </div>
-              <div className="w-32 sm:w-36 lg:w-32">
-                <Image
-                  src="/SB logo color.png"
-                  alt="IEEE SB Logo"
-                  width={200}
-                  height={80}
-                  className="w-full h-auto object-contain"
-                />
-              </div>
-              <div className="w-32 sm:w-36 lg:w-32 flex justify-center">
-                <div className="w-24 sm:w-28 lg:w-24">
-                  <Image
-                    src="/ydyud.png"
-                    alt="YDYUD Logo"
-                    width={200}
-                    height={80}
-                    className="w-full h-auto object-contain"
-                  />
-                </div>
-              </div>
-              <div className="w-32 sm:w-36 lg:w-32 flex justify-center">
-                <div className="w-24 sm:w-28 lg:w-24">
-                  <Image
-                    src="/acses.png"
-                    alt="ACSES Logo"
-                    width={200}
-                    height={80}
-                    className="w-full h-auto object-contain"
-                  />
-                </div>
               </div>
             </div>
           </div>
