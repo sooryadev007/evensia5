@@ -492,10 +492,10 @@ export default function Home() {
                   </div>
                   <div className="space-y-4">
                     <p className="text-[#F3E1B3] leading-relaxed text-lg sm:text-xl font-prompt">
-                      The Photography Workshop at EVENSIA 5.0 offers an excellent opportunity to enhance your photography skills, whether you're a beginner or an experienced enthusiast. Participants will learn key techniques, creative approaches, and expert tips for capturing stunning visuals. The session will cover various aspects of photography, including composition, lighting, and editing, helping you improve your ability to tell compelling stories through your images.
+                      The Photography Workshop at EVENSIA 5.0 offers a chance to enhance your photography skills, from mastering composition and lighting to creative storytelling and editing techniques.
                     </p>
                     <div className="space-y-2">
-                      <p className="text-[#F3E1B3] font-semibold text-lg sm:text-xl">The workshop will be led by Sebinster Francis:</p>
+                      <p className="text-[#F3E1B3] text-lg sm:text-xl font-prompt">The workshop will be led by <span className="font-bold">Sebinster Francis</span>, a highly experienced photographer, content creator, and social media influencer. His expertise includes:</p>
                       <ul className="space-y-2 text-[#F3E1B3] text-lg sm:text-xl">
                         <li className="flex items-center gap-2">
                           <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
@@ -516,7 +516,7 @@ export default function Home() {
                       </ul>
                     </div>
                     <p className="text-[#F3E1B3] leading-relaxed text-lg sm:text-xl">
-                      Join us for this insightful session and take your photography to the next level!
+                      Don't miss this opportunity to capture stunning images like a pro!
                     </p>
                   </div>
                 </Card>
@@ -544,28 +544,25 @@ export default function Home() {
                   </div>
                   <div className="space-y-4">
                     <p className="text-[#F3E1B3] leading-relaxed text-lg sm:text-xl font-prompt">
-                      The AR/VR Workshop at EVENSIA 5.0 offers an exciting opportunity to explore the transformative potential of immersive technologies.
+                      The AR/VR Workshop at EVENSIA 5.0 offers an exciting opportunity to explore immersive technologies transforming industries like gaming, healthcare, and education.
                     </p>
                     <p className="text-[#F3E1B3] leading-relaxed text-lg sm:text-xl font-prompt">
-                      Augmented Reality (AR) enhances the real world by overlaying digital content, creating interactive experiences, while Virtual Reality (VR) immerses users in fully simulated environments, engaging them beyond the real world's limits. These technologies are reshaping industries such as gaming, healthcare, education, and architecture.
-                    </p>
-                    <p className="text-[#F3E1B3] leading-relaxed text-lg sm:text-xl font-prompt">
-                      In this workshop, participants will gain hands-on experience in designing and developing AR/VR applications. They will learn how to create engaging virtual environments and dynamic augmented content, and explore the latest trends, tools, and frameworks used by industry professionals to bring innovative ideas to life.
+                      Participants will gain hands-on experience in designing AR/VR applications, creating interactive augmented content, and building virtual environments using industry-relevant tools and frameworks.
                     </p>
                     <div className="space-y-2">
-                      <p className="text-[#F3E1B3] font-semibold text-lg sm:text-xl">The session will be led by:</p>
+                      <p className="text-[#F3E1B3] text-lg sm:text-xl">The session will be led by:</p>
                       <ul className="space-y-2 text-[#F3E1B3] text-lg sm:text-xl">
                         <li className="flex items-center gap-2">
                           <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
-                          <span>Mathews Kuriakose, Software Developer</span>
+                          <span><span className="font-bold">Mathews Kuriakose</span>, Software Developer</span>
                         </li>
                         <li className="flex items-center gap-2">
                           <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
-                          <span>Mrudul Shaji, Software Developer</span>
+                          <span><span className="font-bold">Mrudul Shaji</span>, Software Developer</span>
                         </li>
                         <li className="flex items-center gap-2">
                           <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
-                          <span>Vishnu Prathap, Implementation Engineer from 6D Technologies</span>
+                          <span><span className="font-bold">Vishnu Prathap</span>, Implementation Engineer, 6D Technologies</span>
                         </li>
                       </ul>
                     </div>
