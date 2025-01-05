@@ -22,6 +22,7 @@ import CountdownTimer from "@/components/CountdownTimer";
 export default function Home() {
   const [mounted, setMounted] = useState(false);
   const [guidelinesAccepted, setGuidelinesAccepted] = useState(false);
+  const [registrationEnabled, setRegistrationEnabled] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -113,7 +114,8 @@ export default function Home() {
               <DialogTrigger asChild>
                 <Button
                   size="lg"
-                  className="mt-4 sm:mt-8 bg-[#7D1806] hover:bg-[#7D1806]/90 text-[#F3E1B3] text-2xl sm:text-3xl md:text-4xl px-8 sm:px-10 md:px-12 py-5 sm:py-6 md:py-8 rounded-lg shadow-lg transform transition hover:scale-105 w-full sm:w-auto min-w-[200px]"
+                  className="mt-4 sm:mt-8 bg-[#7D1806] hover:bg-[#7D1806]/90 text-[#F3E1B3] text-2xl sm:text-3xl md:text-4xl px-8 sm:px-10 md:px-12 py-5 sm:py-6 md:py-8 rounded-lg shadow-lg transform transition hover:scale-105 w-full sm:w-auto min-w-[200px] disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+                  disabled={!registrationEnabled}
                 >
                   Register Now
                 </Button>
