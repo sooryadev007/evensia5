@@ -5,7 +5,11 @@ import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 
-export default function Navbar() {
+interface NavbarProps {
+  className?: string;
+}
+
+export default function Navbar({ className }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
@@ -25,7 +29,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed w-full z-50 bg-[#140806]/95 backdrop-blur-sm border-b border-[#f5e3b7]/20">
+    <nav className={`fixed w-full z-50 bg-[#140806]/95 backdrop-blur-sm border-b border-[#f5e3b7]/20 ${className}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
           <div className="flex-shrink-0 flex items-center gap-2">
