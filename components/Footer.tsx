@@ -52,7 +52,7 @@ export default function Footer() {
               <div className="w-32 sm:w-36 lg:w-32 flex justify-center">
                 <div className="w-24 sm:w-28 lg:w-24">
                   <Image
-                    src="/ydyud.png"
+                    src="/ydyud1.png"
                     alt="YDYUD Logo"
                     width={200}
                     height={80}
