@@ -414,11 +414,11 @@ export default function Home() {
               >
                 <Card className="p-6 sm:p-8 bg-[#1F1D17] border-[#F3E1B3]/20 shadow-lg overflow-hidden">
                   <div className="relative h-64 -mx-6 -mt-6 mb-6 bg-gray-800 flex items-center justify-center">
-                    <span className="text-[#F3E1B3]/50 text-xl">TBA</span>
+                    <span className="text-[#F3E1B3]/50 text-xl font-prompt">TBA</span>
                   </div>
                   <div className="space-y-3">
-                    <h3 className="text-2xl sm:text-3xl font-bold text-[#F3E1B3]">To Be Announced</h3>
-                    <p className="text-xl sm:text-2xl text-[#F3E1B3]/80">Coming Soon</p>
+                    <h3 className="text-2xl sm:text-3xl font-bold text-[#F3E1B3] font-prompt">To Be Announced</h3>
+                    <p className="text-xl sm:text-2xl text-[#F3E1B3]/80 font-prompt">Coming Soon</p>
                   </div>
                 </Card>
               </motion.div>
@@ -432,11 +432,11 @@ export default function Home() {
               >
                 <Card className="p-6 sm:p-8 bg-[#1F1D17] border-[#F3E1B3]/20 shadow-lg overflow-hidden">
                   <div className="relative h-64 -mx-6 -mt-6 mb-6 bg-gray-800 flex items-center justify-center">
-                    <span className="text-[#F3E1B3]/50 text-xl">TBA</span>
+                    <span className="text-[#F3E1B3]/50 text-xl font-prompt">TBA</span>
                   </div>
                   <div className="space-y-3">
-                    <h3 className="text-2xl sm:text-3xl font-bold text-[#F3E1B3]">To Be Announced</h3>
-                    <p className="text-xl sm:text-2xl text-[#F3E1B3]/80">Coming Soon</p>
+                    <h3 className="text-2xl sm:text-3xl font-bold text-[#F3E1B3] font-prompt">To Be Announced</h3>
+                    <p className="text-xl sm:text-2xl text-[#F3E1B3]/80 font-prompt">Coming Soon</p>
                   </div>
                 </Card>
               </motion.div>
@@ -450,11 +450,11 @@ export default function Home() {
               >
                 <Card className="p-6 sm:p-8 bg-[#1F1D17] border-[#F3E1B3]/20 shadow-lg overflow-hidden">
                   <div className="relative h-64 -mx-6 -mt-6 mb-6 bg-gray-800 flex items-center justify-center">
-                    <span className="text-[#F3E1B3]/50 text-xl">TBA</span>
+                    <span className="text-[#F3E1B3]/50 text-xl font-prompt">TBA</span>
                   </div>
                   <div className="space-y-3">
-                    <h3 className="text-2xl sm:text-3xl font-bold text-[#F3E1B3]">To Be Announced</h3>
-                    <p className="text-xl sm:text-2xl text-[#F3E1B3]/80">Coming Soon</p>
+                    <h3 className="text-2xl sm:text-3xl font-bold text-[#F3E1B3] font-prompt">To Be Announced</h3>
+                    <p className="text-xl sm:text-2xl text-[#F3E1B3]/80 font-prompt">Coming Soon</p>
                   </div>
                 </Card>
               </motion.div>
