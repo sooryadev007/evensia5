@@ -84,7 +84,9 @@ const config: Config = {
         'accordion-up': 'accordion-up 0.2s ease-out',
       },
       fontFamily: {
-        birthstone: ['var(--font-birthstone)'],
+        'kalam-light': ['"Kalam"', 'serif'],
+        'kalam-regular': ['"Kalam"', 'serif'],
+        'young-serif': ['"Young Serif"', 'serif'],
       },
     },
   },

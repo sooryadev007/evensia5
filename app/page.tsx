@@ -30,8 +30,8 @@ export default function Home() {
   if (!mounted) return null;
 
   return (
-    <div className="min-h-screen bg-[#FFFCF3] text-3xl">
-      <Navbar />
+    <div className="min-h-screen bg-[#FFFCF3] text-3xl font-kalam-light">
+      <Navbar className="font-young-serif text-lg" />
 
       {/* Hero Section */}
       <motion.section
@@ -212,7 +212,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-5xl sm:text-6xl font-bold text-[#F3E1B3] mb-8 sm:mb-12 text-center"
+            className="text-5xl sm:text-6xl font-young-serif text-[#F3E1B3] mb-8 sm:mb-12 text-center"
           >
             About Evensia
           </motion.h2>
@@ -399,7 +399,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-5xl sm:text-6xl font-bold text-[#F3E1B3] mb-8 sm:mb-12 text-center"
+              className="text-5xl sm:text-6xl font-young-serif text-[#F3E1B3] mb-8 sm:mb-12 text-center"
             >
               Speakers
             </motion.h2>
@@ -467,13 +467,13 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-5xl sm:text-6xl font-bold text-[#F3E1B3] mb-8 sm:mb-12 text-center"
+              className="text-5xl sm:text-6xl font-young-serif text-[#F3E1B3] mb-8 sm:mb-12 text-center"
             >
               Workshops
             </motion.h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
-              {/* Web Development Workshop Card */}
+              {/* Photography Workshop Card - Replacing TBA Card */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -487,27 +487,37 @@ export default function Home() {
                     </div>
                     <div className="absolute inset-0 bg-black/50" />
                     <h3 className="absolute bottom-4 left-6 text-2xl font-bold text-[#F3E1B3]">
-                      Web Development Workshop
+                      Photography Workshop
                     </h3>
                   </div>
                   <div className="space-y-4">
                     <p className="text-[#F3E1B3] leading-relaxed">
-                      Master modern web development technologies and best practices through hands-on coding sessions.
+                      The Photography Workshop at EVENSIA 5.0 offers an excellent opportunity to enhance your photography skills, whether you're a beginner or an experienced enthusiast. Participants will learn key techniques, creative approaches, and expert tips for capturing stunning visuals. The session will cover various aspects of photography, including composition, lighting, and editing, helping you improve your ability to tell compelling stories through your images.
                     </p>
-                    <ul className="space-y-2 text-[#F3E1B3]">
-                      <li className="flex items-center gap-2">
-                        <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
-                        <span>Frontend Frameworks (React, Next.js)</span>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
-                        <span>Backend Development (Node.js)</span>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
-                        <span>Database Design & API Development</span>
-                      </li>
-                    </ul>
+                    <div className="space-y-2">
+                      <p className="text-[#F3E1B3] font-semibold">The workshop will be led by Sebinster Francis:</p>
+                      <ul className="space-y-2 text-[#F3E1B3]">
+                        <li className="flex items-center gap-2">
+                          <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
+                          <span>Photographer, Content Creator, and Social Media Influencer</span>
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
+                          <span>Influencer at Sony</span>
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
+                          <span>Featured on BBC Earth and Nat Geo India</span>
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
+                          <span>Recipient of the Kerala State Film Award in 2021</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <p className="text-[#F3E1B3] leading-relaxed">
+                      Join us for this insightful session and take your photography to the next level!
+                    </p>
                   </div>
                 </Card>
               </motion.div>
@@ -529,27 +539,36 @@ export default function Home() {
                     />
                     <div className="absolute inset-0 bg-black/50" />
                     <h3 className="absolute bottom-4 left-6 text-2xl font-bold text-[#F3E1B3]">
-                      Virtual Reality Workshop
+                      AR/VR Workshop
                     </h3>
                   </div>
                   <div className="space-y-4">
                     <p className="text-[#F3E1B3] leading-relaxed">
-                      Experience the future of technology with hands-on virtual reality development and implementation.
+                      The AR/VR Workshop at EVENSIA 5.0 offers an exciting opportunity to explore the transformative potential of immersive technologies.
                     </p>
-                    <ul className="space-y-2 text-[#F3E1B3]">
-                      <li className="flex items-center gap-2">
-                        <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
-                        <span>VR Development Fundamentals</span>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
-                        <span>3D Environment Design</span>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
-                        <span>Interactive VR Applications</span>
-                      </li>
-                    </ul>
+                    <p className="text-[#F3E1B3] leading-relaxed">
+                      Augmented Reality (AR) enhances the real world by overlaying digital content, creating interactive experiences, while Virtual Reality (VR) immerses users in fully simulated environments, engaging them beyond the real world's limits. These technologies are reshaping industries such as gaming, healthcare, education, and architecture.
+                    </p>
+                    <p className="text-[#F3E1B3] leading-relaxed">
+                      In this workshop, participants will gain hands-on experience in designing and developing AR/VR applications. They will learn how to create engaging virtual environments and dynamic augmented content, and explore the latest trends, tools, and frameworks used by industry professionals to bring innovative ideas to life.
+                    </p>
+                    <div className="space-y-2">
+                      <p className="text-[#F3E1B3] font-semibold">The session will be led by:</p>
+                      <ul className="space-y-2 text-[#F3E1B3]">
+                        <li className="flex items-center gap-2">
+                          <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
+                          <span>Mathews Kuriakose, Software Developer</span>
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
+                          <span>Mrudul Shaji, Software Developer</span>
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <div className="h-1.5 w-1.5 rounded-full bg-[#F3E1B3]" />
+                          <span>Vishnu Prathap, Implementation Engineer from 6D Technologies</span>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </Card>
               </motion.div>
@@ -568,7 +587,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-5xl sm:text-6xl font-bold text-[#F3E1B3] mb-8 sm:mb-12 text-center"
+            className="text-5xl sm:text-6xl font-young-serif text-[#F3E1B3] mb-8 sm:mb-12 text-center"
           >
             Glimpses of Evensia
           </motion.h2>
@@ -646,7 +665,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-5xl sm:text-6xl font-bold text-[#F3E1B3] mb-8 sm:mb-12 text-center"
+            className="text-5xl sm:text-6xl font-young-serif text-[#F3E1B3] mb-8 sm:mb-12 text-center"
           >
             Location
           </motion.h2>
@@ -703,7 +722,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-5xl sm:text-6xl font-bold text-[#F3E1B3] mb-8 sm:mb-12 text-center"
+            className="text-5xl sm:text-6xl font-young-serif text-[#F3E1B3] mb-8 sm:mb-12 text-center"
           >
             Contact Us
           </motion.h2>

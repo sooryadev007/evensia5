@@ -54,7 +54,7 @@ export default function Navbar() {
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="text-[#f5e3b7] hover:text-[#db5a42] px-4 py-2 rounded-md text-2xl lg:text-3xl font-medium transition-colors"
+                  className="text-[#f5e3b7] hover:text-[#db5a42] px-4 py-2 rounded-md text-lg font-medium transition-colors font-young-serif"
                 >
                   {item.name}
                 </button>
@@ -87,7 +87,7 @@ export default function Navbar() {
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="text-[#f5e3b7] hover:text-[#db5a42] block w-full text-left px-4 py-3 rounded-md text-2xl sm:text-3xl font-medium"
+                className="text-[#f5e3b7] hover:text-[#db5a42] block w-full text-left px-4 py-3 rounded-md text-lg font-medium font-young-serif"
               >
                 {item.name}
               </button>

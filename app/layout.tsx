@@ -1,14 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Birthstone } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
-
-const birthstone = Birthstone({
-  weight: '400',
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-birthstone',
-});
 
 export const metadata: Metadata = {
   title: 'Evensia 5',
@@ -24,22 +16,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={birthstone.variable}>
+    <html lang="en">
       <head>
-        <link
-          rel="icon"
-          type="image/png"
-          href="/e2.png"
-          sizes="32x32"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          href="/e2.png"
-          sizes="16x16"
-        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Young+Serif&display=swap" rel="stylesheet" />
       </head>
-      <body className="font-birthstone">
+      <body>
         {children}
         <Analytics />
       </body>
