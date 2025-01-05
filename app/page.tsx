@@ -30,7 +30,7 @@ export default function Home() {
   if (!mounted) return null;
 
   return (
-    <div className="min-h-screen bg-[#FFFCF3] text-3xl font-kalam-light">
+    <div className="min-h-screen bg-[#FFFCF3] text-xl font-kalam-light">
       <Navbar className="font-young-serif text-lg" />
 
       {/* Hero Section */}
@@ -89,7 +89,7 @@ export default function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6 }}
-            className="text-3xl sm:text-4xl md:text-5xl text-[#F3E1B3] mb-8 px-4 font-light"
+            className="text-2xl sm:text-3xl md:text-4xl text-[#F3E1B3] mb-8 px-4 font-light"
           >
             Where Technology Meets Romance
           </motion.p>
@@ -227,10 +227,10 @@ export default function Home() {
                 A Legacy of Excellence
               </h3>
               <div className="space-y-8 text-[#F3E1B3]">
-                <p className="text-2xl sm:text-3xl leading-relaxed">
+                <p className="text-lg sm:text-xl leading-relaxed">
                   Evensia is an intercollegiate event that was the inauguration of IEEE CS Chapter of CE Munnar in 2016. The second, third and fourth editions of Evensia were two-day technical symposiums held in November 2017, October 2019 and January 2022 respectively.
                 </p>
-                <p className="text-2xl sm:text-3xl leading-relaxed">
+                <p className="text-lg sm:text-xl leading-relaxed">
                   The four previous editions saw a great participation from students across the state. Evensia is a combination of technology culture and humanity, each edition of Evensia has promised this to all the participants. This event has always been a part of the sweetest memories in the mind of all participants.
                 </p>
               </div>
@@ -243,27 +243,27 @@ export default function Home() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-4 sm:space-y-6">
                   <div className="flex items-center gap-4 sm:gap-5">
-                    <Calendar className="w-8 h-8 sm:w-10 sm:h-10 text-[#F3E1B3]" />
-                    <span className="text-2xl sm:text-3xl text-[#F3E1B3]">January 25-26th, 2025</span>
+                    <Calendar className="w-6 h-6 sm:w-8 sm:h-8 text-[#F3E1B3]" />
+                    <span className="text-lg sm:text-xl text-[#F3E1B3]">January 25-26th, 2025</span>
                   </div>
                   <div className="flex items-center gap-4 sm:gap-5">
-                    <Clock className="w-8 h-8 sm:w-10 sm:h-10 text-[#F3E1B3]" />
-                    <span className="text-2xl sm:text-3xl text-[#F3E1B3]">Full Day Event</span>
+                    <Clock className="w-6 h-6 sm:w-8 sm:h-8 text-[#F3E1B3]" />
+                    <span className="text-lg sm:text-xl text-[#F3E1B3]">Full Day Event</span>
                   </div>
                   <div className="flex items-center gap-4 sm:gap-5">
-                    <MapPin className="w-8 h-8 sm:w-10 sm:h-10 text-[#F3E1B3]" />
-                    <span className="text-2xl sm:text-3xl text-[#F3E1B3]">CE Munnar Campus</span>
+                    <MapPin className="w-6 h-6 sm:w-8 sm:h-8 text-[#F3E1B3]" />
+                    <span className="text-lg sm:text-xl text-[#F3E1B3]">CE Munnar Campus</span>
                   </div>
                   <div className="flex items-center gap-4 sm:gap-5">
-                    <Users className="w-8 h-8 sm:w-10 sm:h-10 text-[#F3E1B3]" />
-                    <span className="text-2xl sm:text-3xl text-[#F3E1B3]">Open to All Engineering Students</span>
+                    <Users className="w-6 h-6 sm:w-8 sm:h-8 text-[#F3E1B3]" />
+                    <span className="text-lg sm:text-xl text-[#F3E1B3]">Open to All Engineering Students</span>
                   </div>
                 </div>
                 <div className="space-y-4 sm:space-y-6 text-[#F3E1B3]">
-                  <p className="text-2xl sm:text-3xl leading-relaxed">
+                  <p className="text-lg sm:text-xl leading-relaxed">
                     EVENSIA 5 continues the legacy of excellence while bringing fresh innovations and opportunities for participants. Join us for a day filled with technical workshops, competitions, and networking opportunities.
                   </p>
-                  <p className="text-2xl sm:text-3xl leading-relaxed">
+                  <p className="text-lg sm:text-xl leading-relaxed">
                     Experience the perfect blend of technology, culture, and humanity that has made Evensia a memorable event for participants throughout its history.
                   </p>
                 </div>
@@ -491,7 +491,7 @@ export default function Home() {
                     </h3>
                   </div>
                   <div className="space-y-4">
-                    <p className="text-[#F3E1B3] leading-relaxed">
+                    <p className="text-[#F3E1B3] leading-relaxed text-base sm:text-lg">
                       The Photography Workshop at EVENSIA 5.0 offers an excellent opportunity to enhance your photography skills, whether you're a beginner or an experienced enthusiast. Participants will learn key techniques, creative approaches, and expert tips for capturing stunning visuals. The session will cover various aspects of photography, including composition, lighting, and editing, helping you improve your ability to tell compelling stories through your images.
                     </p>
                     <div className="space-y-2">
@@ -731,21 +731,25 @@ export default function Home() {
               name="Adarsh K B"
               role="Organizing Chair, Evensia 5"
               phone="9496185897"
+              className="text-base sm:text-lg"
             />
             <ContactCard
               name="Ardra Shaji"
               role="Chair, IEEE SB CE Munnar"
               phone="7306921927"
+              className="text-base sm:text-lg"
             />
             <ContactCard
               name="Dan V Prabha"
               role="Publicity Outreach Coordinator"
               phone="8078126241"
+              className="text-base sm:text-lg"
             />
             <ContactCard
               name="Abhishek Suresh M K"
               role="Registration and Volunteer Coordinator"
               phone="9496452970"
+              className="text-base sm:text-lg"
             />
           </div>
         </div>
