@@ -22,7 +22,7 @@ import CountdownTimer from "@/components/CountdownTimer";
 export default function Home() {
   const [mounted, setMounted] = useState(false);
   const [guidelinesAccepted, setGuidelinesAccepted] = useState(false);
-  const [registrationEnabled, setRegistrationEnabled] = useState(false);
+  const [registrationEnabled, setRegistrationEnabled] = useState(true);
 
   useEffect(() => {
     setMounted(true);
