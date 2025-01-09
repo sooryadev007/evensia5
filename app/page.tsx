@@ -123,41 +123,49 @@ export default function Home() {
               <DialogContent className="bg-[#1F1D17] border-[#F3E1B3]/20 w-[95%] sm:w-[90%] max-h-[90vh] sm:max-w-2xl mx-auto overflow-hidden flex flex-col">
                 <DialogHeader className="space-y-3 sm:space-y-4 p-6 sm:p-8">
                   <DialogTitle className="text-3xl sm:text-4xl font-bold text-[#F3E1B3] text-center">
-                    Registration Guidelines
+                    Guidelines for Registration
                   </DialogTitle>
                 </DialogHeader>
                 <div className="overflow-y-auto flex-1 px-6 sm:px-8">
                   <DialogDescription className="text-[#F3E1B3]/80 text-xl sm:text-2xl pb-6">
                     <div className="space-y-4">
-                      <p className="font-semibold text-[#F3E1B3]">Guidelines for Registration:</p>
                       <ul className="list-disc pl-4 space-y-2">
                         <li>Click on the &apos;Individual registration&apos; or &apos;Couple registration&apos; options below accordingly</li>
                         <li>Fill the Forms correctly (Details will be used for certificates and recordation)</li>
                         <li>Once filled, you will receive an instant acknowledgment through email</li>
                         <li>Within 24 hours you will receive an email from our side providing you with the amount for the tickets with respect to your combinations and QR/UPI details for payment</li>
-                        <li>Do the payment and reply the mail with proof (screen shot) and transaction id as contents</li>
+                        <li>Do the payment and reply the email with proof (screen shot) and transaction id as contents</li>
                         <li>Once the verification process is completed your tickets will be confirmed</li>
                       </ul>
 
-                      <div className="mt-6">
-                        <p className="font-semibold text-[#F3E1B3] mb-2">NB 1:</p>
-                        <ul className="list-disc pl-4 space-y-2">
-                          <li>Couple registration will only be valid for 1 male and 1 female</li>
-                          <li>For every registration as a pair each ticket cost will be deducted by Rs.100/-</li>
-                          <li>Couple registration can be of any combination regardless of IEEE/Non-IEEE/other entry</li>
-                          <li>Delegates can find their own accommodation or can be provided by the event committee.</li>
-                        </ul>
-                      </div>
+                      <p className="font-semibold text-[#F3E1B3] mt-4">Take Care of:</p>
+                      <ul className="list-disc pl-4 space-y-2">
+                        <li>Every delegate is responsible to abide instructions from the event committee</li>
+                        <li>Any conflicts between the delegates is not in concern with the college and event committee</li>
+                        <li>Any one leaving the event venue during the schedule is not encouraged. And such activities will not be a concern to the event committee</li>
+                        <li>Bringing alcohol or any kind of drugs to the college premises and event venue is strictly prohibited,and such behaviour will be punishable under law. Legal actions will be taken against those who violates the same</li>
+                        <li>Any kind of immoral activities and unlawful characters will not be entertained and such scenes will be reported to the law immediately. The college and Evensia organizing committee will not have any responsibility</li>
+                        <li>Event schedules will be provided to you, please make your plans based on that</li>
+                      </ul>
 
-                      <div className="mt-6">
-                        <p className="font-semibold text-[#F3E1B3] mb-2">NB 2: Delegates seeking accommodation facility</p>
-                        <ul className="list-disc pl-4 space-y-2">
-                          <li>Delegates seeking accommodation facility will be charged with Rs.200/- each (for 1 day only)</li>
-                          <li>Accommodation facility for gents and ladies will be provided separately</li>
-                          <li>Travel to and from event venue will be provided</li>
-                          <li>Any conflicts arising from delegates regarding the accommodative property will not be the responsibility of the organizing committee</li>
-                        </ul>
-                      </div>
+                      <p className="font-semibold text-[#F3E1B3] mt-4">NB 1:</p>
+                      <ul className="list-disc pl-4 space-y-2">
+                        <li>Couple registration will only be valid for 1 male and 1 female</li>
+                        <li>No activities that harm or disrespect the emotions and well being of other delegates are encouraged</li>
+                        <li>For every registration as a pair each ticket cost will be deducted by Rs.100/-</li>
+                        <li>Couple registration can be of any combination regardless of IEEE/Non-IEEE/other entry</li>
+                        <li>Delegates can find their own accommodation or can be provided by the event committee</li>
+                      </ul>
+
+                      <p className="font-semibold text-[#F3E1B3] mt-4">NB 2: Delegates seeking accommodation facility</p>
+                      <ul className="list-disc pl-4 space-y-2">
+                        <li>Delegates seeking accommodation facility will be charged with Rs.200/- each (for 1 day only(25th January))</li>
+                        <li>Accommodation facility for gents and ladies will be provided separately</li>
+                        <li>Travel to and from the event venue will be provided</li>
+                        <li>Any conflicts arising from delegates regarding the accommodative property will not be the responsibility of the organizing committee</li>
+                      </ul>
+
+                      <p className="text-[#F3E1B3] mt-4">For any queries please contact the event committee.</p>
                     </div>
                   </DialogDescription>
                 </div>
